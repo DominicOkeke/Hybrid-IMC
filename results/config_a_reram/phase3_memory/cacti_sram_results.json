@@ -1,0 +1,46 @@
+{
+  "model": "CACTI calibrated to TSMC N7 ",
+  "sram_buffers": [
+    {
+      "size_KB": 1,
+      "access_ns": 0.3,
+      "cycle_ns": 0.36,
+      "read_nJ": 0.000256,
+      "write_nJ": 0.000307,
+      "leak_mW": 0.0655,
+      "area_mm2": 0.000442,
+      "name": "PE Register",
+      "count": 128,
+      "total_area_mm2": 0.056576,
+      "total_leak_mW": 8.384
+    },
+    {
+      "size_KB": 256,
+      "access_ns": 0.8,
+      "cycle_ns": 0.96,
+      "read_nJ": 0.000256,
+      "write_nJ": 0.000307,
+      "leak_mW": 16.7772,
+      "area_mm2": 0.1256,
+      "name": "Tile Buffer",
+      "count": 16,
+      "total_area_mm2": 2.0096,
+      "total_leak_mW": 268.4352
+    },
+    {
+      "size_KB": 2048,
+      "access_ns": 1.6,
+      "cycle_ns": 1.92,
+      "read_nJ": 0.000256,
+      "write_nJ": 0.000307,
+      "leak_mW": 134.2177,
+      "area_mm2": 1.041865,
+      "name": "Global Buffer",
+      "count": 1,
+      "total_area_mm2": 1.041865,
+      "total_leak_mW": 134.2177
+    }
+  ],
+  "total_buffer_area_mm2": 3.108041,
+  "total_buffer_leakage_mW": 411.0369
+}

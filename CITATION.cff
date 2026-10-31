@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software or its results, please cite it as below."
+title: "TOMAS: Operation-Aware Hybrid of In-Memory AI Accelerators for Energy-Efficient Transformer Inference -- simulation code and data"
+type: software
+version: "2.0"
+date-released: "2026-10-31"
+license: BSD-3-Clause
+repository-code: "https://github.com/DominicOkeke/Hybrid-IMC"
+authors:
+  - family-names: Okeke
+    given-names: Dominic N.
+    affiliation: "Prairie View A&M University"
+  - family-names: Musa
+    given-names: Sarhan M.
+    affiliation: "Prairie View A&M University"
+  - family-names: Foreman
+    given-names: Justin
+    affiliation: "Prairie View A&M University"
+  - family-names: Akujuobi
+    given-names: Cajetan M.
+    affiliation: "Prairie View A&M University"
+  - family-names: Nzekwe
+    given-names: Ifeakandu
+    affiliation: "Prairie View A&M University"
+  - family-names: Cui
+    given-names: Suxia
+    affiliation: "Prairie View A&M University"

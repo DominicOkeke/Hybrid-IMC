@@ -1,0 +1,50 @@
+{
+  "system_energy_uJ": 2080.837782,
+  "system_latency_us": 447.565523,
+  "system_TOPS": 24.965341,
+  "system_TOPS_W": 5.369773,
+  "system_1b_TOPS_W": 176.472209,
+  "system_area_mm2": 89.327757,
+  "dram_energy_uJ": 1855.143014,
+  "dram_latency_us": 129.260243,
+  "buffer_energy_uJ": 22.370845,
+  "dram_share_pct": 89.153659,
+  "chip_share_pct": 9.771253,
+  "weights_MB": 52.2052,
+  "inferences_per_sec": 2234.309721,
+  "system_energy_mJ": 2.080838,
+  "system_latency_ms": 0.447566,
+  "system_leakage_mW": 411.041792,
+  "energy_efficiency_TOPS_W": 5.369773,
+  "throughput_TOPS": 24.965341,
+  "config": "Config C: ReRAM AIMC (22nm) + SRAM CIM (5nm)",
+  "short": "Config C",
+  "technode_nm": 22,
+  "weight_precision": 4.108,
+  "total_macs": 11173625856,
+  "energy_breakdown": {
+    "Chip (compute + I/O)": {
+      "uJ": 203.323923,
+      "pct": 9.77
+    },
+    "Buffer (SRAM)": {
+      "uJ": 22.370845,
+      "pct": 1.08
+    },
+    "DRAM (HBM2E)": {
+      "uJ": 1855.143014,
+      "pct": 89.15
+    }
+  },
+  "latency_breakdown": {
+    "compute_us": 318.2592,
+    "buffer_us": 0.04608,
+    "dram_us": 129.260243
+  },
+  "area_breakdown": {
+    "compute_mm2": 86.219664,
+    "buffer_mm2": 3.108094
+  },
+  "total_leakage_mW": 411.041792,
+  "model": "STEP 7.5 unified engine v2 (2026-10-15)"
+}

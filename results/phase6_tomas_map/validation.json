@@ -1,0 +1,56 @@
+{
+  "macro": [
+    {
+      "reference": "Dong ISSCC'20, 7nm SRAM CIM, 4b/4b, 64 rows",
+      "cls": "calibration",
+      "reported": 351.0,
+      "predicted": {
+        "64": 350.99999999999994
+      },
+      "ratio_lo": 0.9999999999999999,
+      "ratio_hi": 0.9999999999999999,
+      "note": "SRAM cell energy fitted to it"
+    },
+    {
+      "reference": "Hung Nat.Electron.'21, 22nm ReRAM, 8b/8b",
+      "cls": "independent",
+      "reported": 15.6,
+      "predicted": {
+        "64": 13.062710937028559,
+        "128": 13.850415512465371,
+        "256": 14.34720229555236
+      },
+      "ratio_lo": 0.8373532651941384,
+      "ratio_hi": 0.9196924548431,
+      "note": "rows 64/128/256"
+    },
+    {
+      "reference": "Hung Nat.Electron.'21, 22nm ReRAM, 1b/1b",
+      "cls": "independent",
+      "reported": 194.4,
+      "predicted": {
+        "64": 212.81084211759293,
+        "128": 224.05711890915666,
+        "256": 230.86297090161298
+      },
+      "ratio_lo": 1.094705977971157,
+      "ratio_hi": 1.1875667227449227,
+      "note": "rows 64/128/256"
+    }
+  ],
+  "adc_audit": {
+    "Config A": {
+      "static_adcs": 82944,
+      "dynamic_adcs": 0,
+      "adc_area_mm2": 82.944,
+      "array_area_mm2": 84.3880472772608
+    },
+    "Config C": {
+      "static_adcs": 82944,
+      "dynamic_adcs": 2304,
+      "adc_area_mm2": 85.24799999999999,
+      "array_area_mm2": 86.2196637892608
+    }
+  },
+  "sram_E_cell_fJ": 0.25527796065936603
+}

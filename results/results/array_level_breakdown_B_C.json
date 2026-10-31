@@ -1,0 +1,49 @@
+{
+  "Config A": {
+    "components_uJ": {
+      "static:array": 182.643484,
+      "static:adc": 5.096079,
+      "static:dac": 0.082575,
+      "static:shift_add": 1.698693,
+      "static:wl_sense": 5.945426,
+      "dynamic:digital_mac": 60.397978,
+      "io_interface": 0.0
+    },
+    "total_chip_uJ": 255.864236,
+    "latency_us": 233.472,
+    "TOPS_W": 43.670136
+  },
+  "Config B": {
+    "components_uJ": {
+      "static:array": 521.838526,
+      "static:adc": 8.435813,
+      "static:dac": 0.082575,
+      "static:shift_add": 3.397386,
+      "static:wl_sense": 11.890852,
+      "dynamic:digital_mac": 60.397978,
+      "io_interface": 0.0
+    },
+    "total_chip_uJ": 606.04313,
+    "latency_us": 208.896,
+    "TOPS_W": 18.437014
+  },
+  "Config C": {
+    "components_uJ": {
+      "static:array": 182.643484,
+      "static:adc": 5.096079,
+      "static:dac": 0.082575,
+      "static:shift_add": 1.698693,
+      "static:wl_sense": 5.945426,
+      "dynamic:array": 3.700385,
+      "dynamic:adc": 1.503544,
+      "dynamic:dac": 0.094372,
+      "dynamic:shift_add": 0.566231,
+      "dynamic:wl_sense": 1.981809,
+      "dynamic:kv_write": 0.011325,
+      "io_interface": 0.0
+    },
+    "total_chip_uJ": 203.323923,
+    "latency_us": 318.2592,
+    "TOPS_W": 54.954802
+  }
+}

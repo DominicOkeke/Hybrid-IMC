@@ -1,0 +1,203 @@
+{
+  "results": [
+    {
+      "config": "Baseline",
+      "batch": 1,
+      "us_per_token": 276.2612869565218,
+      "uJ_per_token": 3990.3180288,
+      "tokens_per_s": 3619.7616069072346,
+      "TOPS_W": 0.03184713375796179,
+      "TOPS": 0.45999999999999996,
+      "area_mm2": 0.8192,
+      "converters": 0,
+      "design": {
+        "area_mm2": 0.8192
+      },
+      "label": "Baseline 8-bit digital"
+    },
+    {
+      "config": "Config A",
+      "batch": 1,
+      "us_per_token": 15.158641304347825,
+      "uJ_per_token": 113.63362775039998,
+      "tokens_per_s": 65968.97307103497,
+      "TOPS_W": 1.1183326143484202,
+      "TOPS": 8.383349763909953,
+      "area_mm2": 1.7278660040704001,
+      "converters": 614,
+      "design": {
+        "T_A": 128,
+        "n_adc_A": 614,
+        "n_adc_D": null,
+        "dig_side": 64,
+        "area_mm2": 1.7278660040704001,
+        "converters": 614
+      },
+      "label": "A: ReRAM + logic, KV in DRAM"
+    },
+    {
+      "config": "Config C",
+      "batch": 1,
+      "us_per_token": 23.545666304347826,
+      "uJ_per_token": 113.02482477686152,
+      "tokens_per_s": 42470.66050602038,
+      "TOPS_W": 1.1243564610773533,
+      "TOPS": 5.397179691471886,
+      "area_mm2": 1.9592770120704,
+      "converters": 819,
+      "design": {
+        "T_A": 128,
+        "T_C": 64,
+        "n_adc_A": 462,
+        "n_adc_D": 357,
+        "dig_side": null,
+        "area_mm2": 1.9592770120704,
+        "converters": 819
+      },
+      "label": "C: ReRAM + SRAM CIM, KV in DRAM"
+    },
+    {
+      "config": "Config A",
+      "batch": 1,
+      "us_per_token": 10.217250000000002,
+      "uJ_per_token": 2.945316864,
+      "tokens_per_s": 97873.69399789571,
+      "TOPS_W": 43.14652645807823,
+      "TOPS": 12.437807825001833,
+      "area_mm2": 4.0720625096704,
+      "converters": 614,
+      "design": {
+        "T_A": 128,
+        "kv_buffer": true,
+        "n_adc_A": 614,
+        "n_adc_D": null,
+        "dig_side": 64,
+        "area_mm2": 4.0720625096704,
+        "converters": 614
+      },
+      "label": "A: + SRAM buffer holding KV"
+    },
+    {
+      "config": "Config C",
+      "batch": 1,
+      "us_per_token": 13.379475000000015,
+      "uJ_per_token": 2.305290082461538,
+      "tokens_per_s": 74741.34822180982,
+      "TOPS_W": 55.125466841164986,
+      "TOPS": 9.49814488236645,
+      "area_mm2": 4.5025981000704,
+      "converters": 819,
+      "design": {
+        "T_A": 128,
+        "T_C": 64,
+        "kv_resident": true,
+        "n_adc_A": 462,
+        "n_adc_D": 357,
+        "dig_side": null,
+        "area_mm2": 4.5025981000704,
+        "converters": 819
+      },
+      "label": "C: SRAM CIM holding KV"
+    },
+    {
+      "config": "Baseline",
+      "batch": 12,
+      "us_per_token": 361.10859130434784,
+      "uJ_per_token": 457.3019136,
+      "tokens_per_s": 33231.00111424991,
+      "TOPS_W": 0.2778912316364294,
+      "TOPS": 4.223002001951094,
+      "area_mm2": 0.8192,
+      "converters": 0,
+      "design": {
+        "area_mm2": 0.8192
+      },
+      "label": "Baseline 8-bit digital, batch 12"
+    },
+    {
+      "config": "Config A",
+      "batch": 12,
+      "us_per_token": 92.5612605978261,
+      "uJ_per_token": 113.63362775040001,
+      "tokens_per_s": 129643.86961127703,
+      "TOPS_W": 1.11833261434842,
+      "TOPS": 16.47516784182405,
+      "area_mm2": 1.7282660040703999,
+      "converters": 768,
+      "design": {
+        "T_A": 128,
+        "n_adc_A": 768,
+        "n_adc_D": null,
+        "dig_side": 32,
+        "area_mm2": 1.7282660040703999,
+        "converters": 768
+      },
+      "label": "A: 12 streams, KV in DRAM"
+    },
+    {
+      "config": "Config C",
+      "batch": 12,
+      "us_per_token": 107.90792119565232,
+      "uJ_per_token": 113.02482477686152,
+      "tokens_per_s": 111205.9232263617,
+      "TOPS_W": 1.1243564610773535,
+      "TOPS": 14.132070075143305,
+      "area_mm2": 1.9592770120704,
+      "converters": 819,
+      "design": {
+        "T_A": 128,
+        "T_C": 64,
+        "n_adc_A": 452,
+        "n_adc_D": 367,
+        "dig_side": null,
+        "area_mm2": 1.9592770120704,
+        "converters": 819
+      },
+      "label": "C: 12 streams, KV in DRAM"
+    },
+    {
+      "config": "Config A",
+      "batch": 12,
+      "us_per_token": 76.32444375000001,
+      "uJ_per_token": 2.9453168640000005,
+      "tokens_per_s": 157223.55002423452,
+      "TOPS_W": 43.14652645807823,
+      "TOPS": 19.97999892400133,
+      "area_mm2": 29.858624071270395,
+      "converters": 768,
+      "design": {
+        "T_A": 128,
+        "kv_buffer": true,
+        "n_adc_A": 768,
+        "n_adc_D": null,
+        "dig_side": 32,
+        "area_mm2": 29.858624071270395,
+        "converters": 768
+      },
+      "label": "A: 12 streams, SRAM buffer KV"
+    },
+    {
+      "config": "Config C",
+      "batch": 12,
+      "us_per_token": 89.3160000000001,
+      "uJ_per_token": 2.305290082461539,
+      "tokens_per_s": 134354.4269783688,
+      "TOPS_W": 55.12546684116496,
+      "TOPS": 17.073786376461086,
+      "area_mm2": 35.022451156070396,
+      "converters": 819,
+      "design": {
+        "T_A": 128,
+        "T_C": 64,
+        "kv_resident": true,
+        "n_adc_A": 536,
+        "n_adc_D": 283,
+        "dig_side": null,
+        "area_mm2": 35.022451156070396,
+        "converters": 819
+      },
+      "label": "C: 12 streams, KV held"
+    }
+  ],
+  "a100_floor_us": 79.44182122186496
+}

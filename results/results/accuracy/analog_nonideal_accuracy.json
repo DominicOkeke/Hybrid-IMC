@@ -1,0 +1,18 @@
+{
+  "step": "STEP 5.0b - BERT-Base SST-2 accuracy with the analog engine's non-idealities (Configs A and C)",
+  "source": "Printed output of STEP 5.0b in the authors' Google Colab run (Tesla T4, PyTorch 2.11.0, Transformers 5.20.1), 2026-10-21. Re-running STEP 5.0b regenerates this file.",
+  "device": {"R_off_over_R_on": 100, "sigma_R_on_pct": 15, "sigma_R_off_pct": 25, "IR_drop_pct": 5,
+             "subarray_rows": 128, "adc_bits": 8, "activation_slices": "two 4-bit"},
+  "floor_pct": 90.0,
+  "dataset": "GLUE SST-2 validation (872 examples)",
+  "seeds": 5,
+  "scenarios": [
+    {"id": "ideal4",    "description": "4-bit weights, full-precision activations (STEP 5.0)", "mean_pct": 90.94, "min_pct": 90.94, "pass": true},
+    {"id": "act8",      "description": "+ 8-bit activations in two 4-bit slices, ideal conversion", "mean_pct": 91.06, "min_pct": 91.06, "pass": true},
+    {"id": "adc8",      "description": "+ 8-bit ADC per 128-row subarray (design point, no device noise)", "mean_pct": 90.71, "min_pct": 90.71, "pass": true},
+    {"id": "noise",     "description": "+ programming noise sigma(R_on)=15%, sigma(R_off)=25%", "mean_pct": 89.95, "std_pct": 0.28, "min_pct": 89.56, "pass": false},
+    {"id": "full",      "description": "+ 5% IR drop (all non-idealities)", "mean_pct": 89.63, "std_pct": 0.62, "min_pct": 88.88, "pass": false},
+    {"id": "full_adc7", "description": "all non-idealities, 7-bit ADC", "mean_pct": 89.41, "std_pct": 0.59, "min_pct": 88.76, "pass": false},
+    {"id": "full_adc6", "description": "all non-idealities, 6-bit ADC", "mean_pct": 88.91, "std_pct": 0.74, "min_pct": 88.07, "pass": false}
+  ]
+}

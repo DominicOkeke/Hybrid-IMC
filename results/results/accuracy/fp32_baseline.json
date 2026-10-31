@@ -1,0 +1,11 @@
+{
+  "model": "textattack/bert-base-uncased-SST-2",
+  "dataset": "GLUE SST-2 validation",
+  "seq_len": 128,
+  "batch_size": 32,
+  "total_samples": 872,
+  "correct": 806,
+  "accuracy_pct": 92.4312,
+  "device": "cuda",
+  "gpu": "Tesla T4"
+}

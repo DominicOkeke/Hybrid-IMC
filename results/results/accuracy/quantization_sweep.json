@@ -1,0 +1,38 @@
+{
+  "2": {
+    "bits": 2,
+    "accuracy_pct": 51.95,
+    "avg_quantization_error": 0.027014,
+    "weight_matrices_quantized": 73
+  },
+  "3": {
+    "bits": 3,
+    "accuracy_pct": 64.11,
+    "avg_quantization_error": 0.011636,
+    "weight_matrices_quantized": 73
+  },
+  "4": {
+    "bits": 4,
+    "accuracy_pct": 90.94,
+    "avg_quantization_error": 0.005069,
+    "weight_matrices_quantized": 73
+  },
+  "5": {
+    "bits": 5,
+    "accuracy_pct": 91.97,
+    "avg_quantization_error": 0.002406,
+    "weight_matrices_quantized": 73
+  },
+  "6": {
+    "bits": 6,
+    "accuracy_pct": 91.86,
+    "avg_quantization_error": 0.001188,
+    "weight_matrices_quantized": 73
+  },
+  "8": {
+    "bits": 8,
+    "accuracy_pct": 92.2,
+    "avg_quantization_error": 0.000293,
+    "weight_matrices_quantized": 73
+  }
+}

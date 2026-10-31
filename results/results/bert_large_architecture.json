@@ -1,0 +1,8 @@
+{
+  "model_name": "bert-large-uncased",
+  "num_layers": 24,
+  "num_attention_heads": 16,
+  "hidden_size": 1024,
+  "intermediate_size": 4096,
+  "total_parameters": 335100000
+}
