@@ -60,6 +60,7 @@ Hybrid-IMC/
 
 ## Release notes
 
+- **Unreleased (main)** (2026-11-04): two optional GPU steps at the end of the notebook. GPU STEP A1 measures SST-2 accuracy with modeled write-verify programming, IR-drop compensation and 64-row subarrays; GPU STEP A2 repeats Layer 4 on MRPC, RTE, QNLI and CoLA. Both need a CUDA GPU and are skipped elsewhere; simulator results are unchanged.
 - **v2.1** (2026-11-04): designs that do not hold their weights now stream the weights their compute model uses plus the embedding rows the input reads (85.1 M for BERT-Base), instead of every parameter including the full embedding tables (109.5 M). This raises the weight-streaming system figures (8-bit digital baseline: 1.92 to 2.21 TOPS/W) and leaves every chip-level and weight-resident result unchanged. Set `STREAM_ALL_PARAMETERS = True` in STEP 7.5 to reproduce v2.0. A leftover workflow note was removed from the sensitivity cell.
 - **v2.0** (2026-10-31): engine v2, TOMAS-Map, analog accuracy check, updated documentation.
 
