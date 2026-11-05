@@ -1,22 +1,22 @@
 {
-  "system_energy_uJ": 5820.161974,
-  "system_latency_us": 930.292758,
-  "system_TOPS": 12.010871,
-  "system_TOPS_W": 1.919814,
-  "system_1b_TOPS_W": 122.868068,
+  "system_energy_uJ": 5060.411523,
+  "system_latency_us": 877.355854,
+  "system_TOPS": 12.735569,
+  "system_TOPS_W": 2.208047,
+  "system_1b_TOPS_W": 141.315,
   "system_area_mm2": 3.927294,
-  "dram_energy_uJ": 3563.065958,
-  "dram_latency_us": 248.262678,
+  "dram_energy_uJ": 2803.315507,
+  "dram_latency_us": 195.325774,
   "buffer_energy_uJ": 22.370845,
-  "dram_share_pct": 61.219361,
-  "chip_share_pct": 38.396271,
-  "weights_MB": 104.4104,
-  "inferences_per_sec": 1074.930436,
-  "system_energy_mJ": 5.820162,
-  "system_latency_ms": 0.930293,
+  "dram_share_pct": 55.396987,
+  "chip_share_pct": 44.160938,
+  "weights_MB": 81.1875,
+  "inferences_per_sec": 1139.788372,
+  "system_energy_mJ": 5.060412,
+  "system_latency_ms": 0.877356,
   "system_leakage_mW": 411.041792,
-  "energy_efficiency_TOPS_W": 1.919814,
-  "throughput_TOPS": 12.010871,
+  "energy_efficiency_TOPS_W": 2.208047,
+  "throughput_TOPS": 12.735569,
   "config": "Baseline: Digital CMOS MAC (7nm)",
   "short": "Baseline",
   "technode_nm": 7,
@@ -25,21 +25,21 @@
   "energy_breakdown": {
     "Chip (compute + I/O)": {
       "uJ": 2234.725171,
-      "pct": 38.4
+      "pct": 44.16
     },
     "Buffer (SRAM)": {
       "uJ": 22.370845,
-      "pct": 0.38
+      "pct": 0.44
     },
     "DRAM (HBM2E)": {
-      "uJ": 3563.065958,
-      "pct": 61.22
+      "uJ": 2803.315507,
+      "pct": 55.4
     }
   },
   "latency_breakdown": {
     "compute_us": 681.984,
     "buffer_us": 0.04608,
-    "dram_us": 248.262678
+    "dram_us": 195.325774
   },
   "area_breakdown": {
     "compute_mm2": 0.8192,

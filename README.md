@@ -32,7 +32,7 @@ Configs A and C differ only in the dynamic-operand engine, which makes their com
 - TOMAS places **97.3%** of the multiply-accumulates on the analog array; the dynamic products $QK^\top$ and $A\cdot V$ are the remaining 2.7%.
 - Mapped at equal logic area, the hybrid reaches **55.31 TOPS/W** at chip level: **1.27x** standalone ReRAM AIMC, **11.1x** the 8-bit digital baseline and **3.0x** a 4-bit one. Its lead over AIMC grows to **3.87x** at 2,048 tokens.
 - In GPT-2 decoding, holding the key/value cache in the hybrid's writable SRAM engine gives the lowest energy per token, **2.31 uJ**, at 13.38 us per token: **5.9x** faster than the 79.4 us an A100 needs at batch one just to stream the 8-bit weights at 1.56 TB/s (a computed lower bound, not a GPU measurement).
-- With weights resident, DRAM is still **34.6-39.6%** of system energy (61.2% for the weight-streaming digital baseline); with weights reloaded every inference it is 87-89%.
+- At system level with weights resident, the hybrid reaches **30.07 TOPS/W**, **13.6x** the 8-bit digital baseline that streams its weights. DRAM is still **34.6-39.6%** of system energy (55.4% for the weight-streaming digital baseline); with weights reloaded every inference it is 84-87%.
 - Converters, not cells, set an analog engine's throughput and area, so standalone AIMC leads in throughput per area.
 - Lossless conversion is not needed: 8-bit conversion of the 4-bit cell sums costs only 0.35 points of SST-2 accuracy (90.71%, above the 90% floor). Under analog non-idealities (STEP 5.0b, 5 seeds), the disclosed programming noise (sigma 15-25%) and 5% uncompensated IR drop lower SST-2 accuracy to **89.63%** (min 88.88%), just below the 90% floor. Configs A and C share this engine, so their comparison is unaffected; write-verify programming, IR-drop compensation or hardware-aware training would be required and are not modeled.
 
@@ -58,13 +58,18 @@ Hybrid-IMC/
 └── LICENSE                        # BSD-3-Clause
 ```
 
+## Release notes
+
+- **v2.1** (2026-11-04): designs that do not hold their weights now stream the weights their compute model uses plus the embedding rows the input reads (85.1 M for BERT-Base), instead of every parameter including the full embedding tables (109.5 M). This raises the weight-streaming system figures (8-bit digital baseline: 1.92 to 2.21 TOPS/W) and leaves every chip-level and weight-resident result unchanged. Set `STREAM_ALL_PARAMETERS = True` in STEP 7.5 to reproduce v2.0. A leftover workflow note was removed from the sensitivity cell.
+- **v2.0** (2026-10-31): engine v2, TOMAS-Map, analog accuracy check, updated documentation.
+
 ## Reproducing the results
 
 See `MANUAL.md`. In short: open the notebook in Google Colab and run it top to bottom. The final cell compares 52 reported values with the run and stops with an error if any differs by more than one part in 10^6. A simulator-only path (no GPU, no downloads) runs Phases 2-6 in a few minutes from the recorded Phase 1 results and reproduces all 52 values.
 
 ## Citation
 
-D. N. Okeke, S. M. Musa, J. Foreman, C. M. Akujuobi, I. Nzekwe and S. Cui, "TOMAS: Operation-Aware Hybrid of In-Memory AI Accelerators for Energy-Efficient Transformer Inference," manuscript, 2026. Code and data: https://github.com/DominicOkeke/Hybrid-IMC (release v2.0). See also `CITATION.cff`.
+D. N. Okeke, S. M. Musa, J. Foreman, C. M. Akujuobi, I. Nzekwe and S. Cui, "TOMAS: Operation-Aware Hybrid of In-Memory AI Accelerators for Energy-Efficient Transformer Inference," manuscript, 2026. Code and data: https://github.com/DominicOkeke/Hybrid-IMC (release v2.1). See also `CITATION.cff`.
 
 ## License
 

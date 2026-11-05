@@ -51,24 +51,24 @@
   "cim_pct": 2.7,
   "system_results": {
     "Baseline": {
-      "system_energy_uJ": 5820.161974,
-      "system_latency_us": 930.292758,
-      "system_TOPS": 12.010871,
-      "system_TOPS_W": 1.919814,
-      "system_1b_TOPS_W": 122.868068,
+      "system_energy_uJ": 5060.411523,
+      "system_latency_us": 877.355854,
+      "system_TOPS": 12.735569,
+      "system_TOPS_W": 2.208047,
+      "system_1b_TOPS_W": 141.315,
       "system_area_mm2": 3.927294,
-      "dram_energy_uJ": 3563.065958,
-      "dram_latency_us": 248.262678,
+      "dram_energy_uJ": 2803.315507,
+      "dram_latency_us": 195.325774,
       "buffer_energy_uJ": 22.370845,
-      "dram_share_pct": 61.219361,
-      "chip_share_pct": 38.396271,
-      "weights_MB": 104.4104,
-      "inferences_per_sec": 1074.930436,
-      "system_energy_mJ": 5.820162,
-      "system_latency_ms": 0.930293,
+      "dram_share_pct": 55.396987,
+      "chip_share_pct": 44.160938,
+      "weights_MB": 81.1875,
+      "inferences_per_sec": 1139.788372,
+      "system_energy_mJ": 5.060412,
+      "system_latency_ms": 0.877356,
       "system_leakage_mW": 411.041792,
-      "energy_efficiency_TOPS_W": 1.919814,
-      "throughput_TOPS": 12.010871,
+      "energy_efficiency_TOPS_W": 2.208047,
+      "throughput_TOPS": 12.735569,
       "config": "Baseline: Digital CMOS MAC (7nm)",
       "short": "Baseline",
       "technode_nm": 7,
@@ -77,21 +77,21 @@
       "energy_breakdown": {
         "Chip (compute + I/O)": {
           "uJ": 2234.725171,
-          "pct": 38.4
+          "pct": 44.16
         },
         "Buffer (SRAM)": {
           "uJ": 22.370845,
-          "pct": 0.38
+          "pct": 0.44
         },
         "DRAM (HBM2E)": {
-          "uJ": 3563.065958,
-          "pct": 61.22
+          "uJ": 2803.315507,
+          "pct": 55.4
         }
       },
       "latency_breakdown": {
         "compute_us": 681.984,
         "buffer_us": 0.04608,
-        "dram_us": 248.262678
+        "dram_us": 195.325774
       },
       "area_breakdown": {
         "compute_mm2": 0.8192,
@@ -101,24 +101,24 @@
       "model": "STEP 7.5 unified engine v2 (2026-10-15)"
     },
     "Config A": {
-      "system_energy_uJ": 2133.378095,
-      "system_latency_us": 362.778323,
-      "system_TOPS": 30.800147,
-      "system_TOPS_W": 5.237527,
-      "system_1b_TOPS_W": 172.126095,
+      "system_energy_uJ": 1753.502869,
+      "system_latency_us": 336.309871,
+      "system_TOPS": 33.224198,
+      "system_TOPS_W": 6.372174,
+      "system_1b_TOPS_W": 209.415135,
       "system_area_mm2": 87.496141,
-      "dram_energy_uJ": 1855.143014,
-      "dram_latency_us": 129.260243,
+      "dram_energy_uJ": 1475.267789,
+      "dram_latency_us": 102.791791,
       "buffer_energy_uJ": 22.370845,
-      "dram_share_pct": 86.958004,
-      "chip_share_pct": 11.993384,
-      "weights_MB": 52.2052,
-      "inferences_per_sec": 2756.504276,
-      "system_energy_mJ": 2.133378,
-      "system_latency_ms": 0.362778,
+      "dram_share_pct": 84.132613,
+      "chip_share_pct": 14.591606,
+      "weights_MB": 40.59375,
+      "inferences_per_sec": 2973.448255,
+      "system_energy_mJ": 1.753503,
+      "system_latency_ms": 0.33631,
       "system_leakage_mW": 411.041792,
-      "energy_efficiency_TOPS_W": 5.237527,
-      "throughput_TOPS": 30.800147,
+      "energy_efficiency_TOPS_W": 6.372174,
+      "throughput_TOPS": 33.224198,
       "config": "Config A: ReRAM AIMC (22nm) + 7nm digital logic",
       "short": "Config A",
       "technode_nm": 22,
@@ -127,21 +127,21 @@
       "energy_breakdown": {
         "Chip (compute + I/O)": {
           "uJ": 255.864236,
-          "pct": 11.99
+          "pct": 14.59
         },
         "Buffer (SRAM)": {
           "uJ": 22.370845,
-          "pct": 1.05
+          "pct": 1.28
         },
         "DRAM (HBM2E)": {
-          "uJ": 1855.143014,
-          "pct": 86.96
+          "uJ": 1475.267789,
+          "pct": 84.13
         }
       },
       "latency_breakdown": {
         "compute_us": 233.472,
         "buffer_us": 0.04608,
-        "dram_us": 129.260243
+        "dram_us": 102.791791
       },
       "area_breakdown": {
         "compute_mm2": 84.388047,
@@ -151,24 +151,24 @@
       "model": "STEP 7.5 unified engine v2 (2026-10-15)"
     },
     "Config B": {
-      "system_energy_uJ": 2056.576253,
-      "system_latency_us": 308.451715,
-      "system_TOPS": 36.224878,
-      "system_TOPS_W": 5.43312,
-      "system_1b_TOPS_W": 136.262653,
+      "system_energy_uJ": 1771.669834,
+      "system_latency_us": 288.600376,
+      "system_TOPS": 38.716602,
+      "system_TOPS_W": 6.306833,
+      "system_1b_TOPS_W": 158.175373,
       "system_area_mm2": 171.213658,
-      "dram_energy_uJ": 1428.162278,
-      "dram_latency_us": 99.509635,
+      "dram_energy_uJ": 1143.255859,
+      "dram_latency_us": 79.658296,
       "buffer_energy_uJ": 22.370845,
-      "dram_share_pct": 69.443682,
-      "chip_share_pct": 29.468547,
-      "weights_MB": 39.1539,
-      "inferences_per_sec": 3241.998511,
-      "system_energy_mJ": 2.056576,
-      "system_latency_ms": 0.308452,
+      "dram_share_pct": 64.529848,
+      "chip_share_pct": 34.207453,
+      "weights_MB": 30.445312,
+      "inferences_per_sec": 3464.998955,
+      "system_energy_mJ": 1.77167,
+      "system_latency_ms": 0.2886,
       "system_leakage_mW": 411.041792,
-      "energy_efficiency_TOPS_W": 5.43312,
-      "throughput_TOPS": 36.224878,
+      "energy_efficiency_TOPS_W": 6.306833,
+      "throughput_TOPS": 38.716602,
       "config": "Config B: FeFET CIM (28nm) + 7nm digital logic",
       "short": "Config B",
       "technode_nm": 28,
@@ -177,21 +177,21 @@
       "energy_breakdown": {
         "Chip (compute + I/O)": {
           "uJ": 606.04313,
-          "pct": 29.47
+          "pct": 34.21
         },
         "Buffer (SRAM)": {
           "uJ": 22.370845,
-          "pct": 1.09
+          "pct": 1.26
         },
         "DRAM (HBM2E)": {
-          "uJ": 1428.162278,
-          "pct": 69.44
+          "uJ": 1143.255859,
+          "pct": 64.53
         }
       },
       "latency_breakdown": {
         "compute_us": 208.896,
         "buffer_us": 0.04608,
-        "dram_us": 99.509635
+        "dram_us": 79.658296
       },
       "area_breakdown": {
         "compute_mm2": 168.105564,
@@ -201,24 +201,24 @@
       "model": "STEP 7.5 unified engine v2 (2026-10-15)"
     },
     "Config C": {
-      "system_energy_uJ": 2080.837782,
-      "system_latency_us": 447.565523,
-      "system_TOPS": 24.965341,
-      "system_TOPS_W": 5.369773,
-      "system_1b_TOPS_W": 176.472209,
+      "system_energy_uJ": 1700.962557,
+      "system_latency_us": 421.097071,
+      "system_TOPS": 26.534561,
+      "system_TOPS_W": 6.569002,
+      "system_1b_TOPS_W": 215.883671,
       "system_area_mm2": 89.327757,
-      "dram_energy_uJ": 1855.143014,
-      "dram_latency_us": 129.260243,
+      "dram_energy_uJ": 1475.267789,
+      "dram_latency_us": 102.791791,
       "buffer_energy_uJ": 22.370845,
-      "dram_share_pct": 89.153659,
-      "chip_share_pct": 9.771253,
-      "weights_MB": 52.2052,
-      "inferences_per_sec": 2234.309721,
-      "system_energy_mJ": 2.080838,
-      "system_latency_ms": 0.447566,
+      "dram_share_pct": 86.73135,
+      "chip_share_pct": 11.953463,
+      "weights_MB": 40.59375,
+      "inferences_per_sec": 2374.749359,
+      "system_energy_mJ": 1.700963,
+      "system_latency_ms": 0.421097,
       "system_leakage_mW": 411.041792,
-      "energy_efficiency_TOPS_W": 5.369773,
-      "throughput_TOPS": 24.965341,
+      "energy_efficiency_TOPS_W": 6.569002,
+      "throughput_TOPS": 26.534561,
       "config": "Config C: ReRAM AIMC (22nm) + SRAM CIM (5nm)",
       "short": "Config C",
       "technode_nm": 22,
@@ -227,21 +227,21 @@
       "energy_breakdown": {
         "Chip (compute + I/O)": {
           "uJ": 203.323923,
-          "pct": 9.77
+          "pct": 11.95
         },
         "Buffer (SRAM)": {
           "uJ": 22.370845,
-          "pct": 1.08
+          "pct": 1.32
         },
         "DRAM (HBM2E)": {
-          "uJ": 1855.143014,
-          "pct": 89.15
+          "uJ": 1475.267789,
+          "pct": 86.73
         }
       },
       "latency_breakdown": {
         "compute_us": 318.2592,
         "buffer_us": 0.04608,
-        "dram_us": 129.260243
+        "dram_us": 102.791791
       },
       "area_breakdown": {
         "compute_mm2": 86.219664,
