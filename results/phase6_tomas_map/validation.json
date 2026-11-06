@@ -82,7 +82,7 @@
       "note": "matched (Wan'22 ED Table 1)"
     },
     {
-      "reference": "Xue ISSCC'19, 55nm, 1b/3b, 9 rows x 64 cols",
+      "reference": "Xue JSSC'20, 55nm, 1b/3b, 9 rows x 64 cols",
       "cls": "independent",
       "reported": 53.17,
       "predicted": {
@@ -93,48 +93,92 @@
       "note": "matched; 55 nm"
     },
     {
-      "reference": "Xue ISSCC'19, 55nm, 2b/3b, 9 rows x 64 cols",
+      "reference": "Xue JSSC'20, 55nm, 2b/3b, 9 rows x 64 cols",
       "cls": "independent",
-      "reported": 22.0,
+      "reported": 21.9,
       "predicted": {
         "9": 43.19350478150923
       },
-      "ratio_lo": 1.9633411264322378,
-      "ratio_hi": 1.9633411264322378,
+      "ratio_lo": 1.9723061544068143,
+      "ratio_hi": 1.9723061544068143,
       "note": "matched; 55 nm"
     },
     {
-      "reference": "Xue Nat.Electron.'21, 1b/2b, 1 row x 64 cols",
-      "cls": "indicative",
+      "reference": "Xue ISSCC'20, 22nm, 1b/2b, 16 acc x 64 cols",
+      "cls": "independent",
+      "reported": 121.38,
+      "predicted": {
+        "16": 84.02240488739017
+      },
+      "ratio_lo": 0.6922261071625487,
+      "ratio_hi": 0.6922261071625487,
+      "note": "matched (Fig. 15.4.S2)"
+    },
+    {
+      "reference": "Xue ISSCC'20, 22nm, 2b/4b, 16 acc x 64 cols",
+      "cls": "independent",
+      "reported": 45.52,
+      "predicted": {
+        "16": 41.32538475126074
+      },
+      "ratio_lo": 0.9078511588589794,
+      "ratio_hi": 0.9078511588589794,
+      "note": "matched (Fig. 15.4.S2)"
+    },
+    {
+      "reference": "Xue ISSCC'20, 22nm, 4b/4b, 16 acc x 64 cols",
+      "cls": "independent",
+      "reported": 28.93,
+      "predicted": {
+        "16": 39.87025583727399
+      },
+      "ratio_lo": 1.3781630085473207,
+      "ratio_hi": 1.3781630085473207,
+      "note": "matched (Fig. 15.4.S2)"
+    },
+    {
+      "reference": "Xue Nat.Electron.'21, 1b/2b, 16 acc x 64 cols",
+      "cls": "independent",
       "reported": 146.21,
       "predicted": {
-        "1": 17.573067480915345
+        "16": 84.02240488739017
       },
-      "ratio_lo": 0.12019059900769677,
-      "ratio_hi": 0.12019059900769677,
-      "note": "bitline-input scheme"
+      "ratio_lo": 0.5746693446918143,
+      "ratio_hi": 0.5746693446918143,
+      "note": "journal version, 16 acc"
     },
     {
-      "reference": "Xue Nat.Electron.'21, 2b/4b, 1 row x 64 cols",
-      "cls": "indicative",
+      "reference": "Xue Nat.Electron.'21, 2b/4b, 16 acc x 64 cols",
+      "cls": "independent",
       "reported": 58.0,
       "predicted": {
-        "1": 8.28470124037006
+        "16": 41.32538475126074
       },
-      "ratio_lo": 0.14283967655810448,
-      "ratio_hi": 0.14283967655810448,
-      "note": "bitline-input scheme"
+      "ratio_lo": 0.7125066336424266,
+      "ratio_hi": 0.7125066336424266,
+      "note": "journal version, 16 acc"
     },
     {
-      "reference": "Xue Nat.Electron.'21, 4b/4b, 1 row x 64 cols",
-      "cls": "indicative",
+      "reference": "Xue Nat.Electron.'21, 4b/4b, 16 acc x 64 cols",
+      "cls": "independent",
       "reported": 36.61,
       "predicted": {
-        "1": 7.430232452609527
+        "16": 39.87025583727399
       },
-      "ratio_lo": 0.20295636308684858,
-      "ratio_hi": 0.20295636308684858,
-      "note": "bitline-input scheme"
+      "ratio_lo": 1.089053696729691,
+      "ratio_hi": 1.089053696729691,
+      "note": "journal version, 16 acc"
+    },
+    {
+      "reference": "Liu ISSCC'20, 130nm, 1b/T, 784 rows, 1b out",
+      "cls": "indicative",
+      "reported": 78.4,
+      "predicted": {
+        "784": 30.045646855650403
+      },
+      "ratio_lo": 0.3832352915261531,
+      "ratio_hi": 0.3832352915261531,
+      "note": "130 nm, 4.2 V, 1-bit out"
     }
   ],
   "adc_audit": {
