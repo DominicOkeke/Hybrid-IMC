@@ -23,7 +23,7 @@
   "adc_area_um2": 1000,
   "adc_latency_ns": 2,
   "adc_FoM_fJ_per_step": 4.0,
-  "dac_type": "Current-steering 1-bit [21]",
+  "dac_type": "Current-steering 1-bit (Chi ISCA 2016)",
   "dac_energy_per_conv_fJ": 5,
   "dac_latency_ns": 0.5,
   "peripheral_technode_nm": 7,
@@ -38,8 +38,7 @@
   "sram_write_energy_per_bit_fJ": 0.6,
   "sram_leakage_mW_per_Mb": 8.0,
   "sram_access_time_ns_256KB": 0.8,
-  "io_energy_per_bit_pJ": 2.5,
-  "io_power_fraction_pct": 15,
+  "io_energy_per_bit_pJ": 1.07,
   "num_io_pins": 256,
   "io_power_per_pin_mW": 3.5,
   "package_area_overhead_pct": 20,
@@ -47,59 +46,59 @@
     "bandwidth_GBps": 460,
     "energy_per_bit_pJ": 3.9,
     "latency_ns": 100,
-    "source": "[27] SK Hynix HBM2E Datasheet, 2021"
+    "source": "SK Hynix HBM2E Datasheet, 2021"
   },
   "hbm3e": {
     "bandwidth_GBps": 1229,
     "energy_per_bit_pJ": 4.05,
     "latency_ns": 80,
-    "source": "[26] Samsung HBM3E 2024; [28] JEDEC JESD238A, 2023"
+    "source": "Samsung HBM3E 2024; JEDEC JESD238A, 2023"
   },
   "silicon_references": [
     {
       "name": "Wen ISSCC 2024 (22nm ReRAM CIM)",
       "TFLOPS_W": 31.2,
-      "ref": "[6]"
+      "ref": "Wen ISSCC 2024"
     },
     {
       "name": "Hsu JSSC 2024 (ReRAM SLC-MLC)",
       "TOPS_W_range": "51.4-251",
-      "ref": "[8]"
+      "ref": "Hsu JSSC 2024"
     },
     {
       "name": "Yao ESSERC 2024 (28nm ReRAM)",
       "TOPS_mm2_bit": 81.1,
-      "ref": "[9]"
+      "ref": "Yao ESSERC 2024"
     },
     {
       "name": "Xue ISSCC 2020 (22nm ReRAM)",
       "TOPS_W_range": "121-28",
-      "ref": "[14]"
+      "ref": "Xue ISSCC 2020"
     },
     {
       "name": "Liu ISSCC 2020 (Analog ReRAM)",
       "TOPS_W": 78.4,
-      "ref": "[15]"
+      "ref": "Liu ISSCC 2020"
     },
     {
-      "name": "Narayanan Nature 2021 (IBM 14nm)",
+      "name": "Ambrogio Nature 2023 (IBM 14nm PCM, context)",
       "TOPS_W": 12.4,
-      "ref": "[2]"
+      "ref": "Ambrogio et al., Nature 620:768-775, 2023"
     },
     {
       "name": "Chang ISSCC 2022 (40nm RRAM/SRAM)",
       "TOPS_W": 60.64,
-      "ref": "[13]"
+      "ref": "Chang ISSCC 2022"
     },
     {
       "name": "Spetalnick ISSCC 2022 (40nm RRAM)",
       "TOPS_W": 26.56,
-      "ref": "[12]"
+      "ref": "Spetalnick ISSCC 2022"
     },
     {
       "name": "Correll VLSI 2022 (MLC ReRAM)",
       "TOPS_W": 20.7,
-      "ref": "[34]"
+      "ref": "Correll VLSI 2022"
     }
   ],
   "seq_len": 128,
