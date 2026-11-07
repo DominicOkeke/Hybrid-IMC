@@ -44,7 +44,7 @@
     "short": "Baseline",
     "technode_nm": 7,
     "compute_type": "Digital MAC (systolic weight-stationary)",
-    "equivalent_to": "Google TPU v4 MXU (128x128 systolic) [94]",
+    "equivalent_to": "Google TPU v4 MXU (128x128 systolic; Jouppi et al., ISCA 2023)",
     "storage": "SRAM register file (volatile)",
     "mac_energy_pJ_8bit": 0.2,
     "mac_energy_pJ_4bit": 0.05,
@@ -109,7 +109,7 @@
     "sources": "(NeuroSim, Peng et al. 2019)"
   },
   "config_c": {
-    "_description": "SRAM CIM + ReRAM heterogeneous -- 22nm ReRAM AIMC holds every static-weight operation; 5nm SRAM CIM executes the dynamic-operand products QK^T and A.V (TOMAS partition, 2026-10-14)",
+    "_description": "SRAM CIM + ReRAM heterogeneous -- 22nm ReRAM AIMC holds every static-weight operation; 5nm SRAM CIM executes the dynamic-operand products QK^T and A.V (TOMAS partition)",
     "name": "Config C: SRAM CIM + ReRAM Heterogeneous",
     "short": "Config C",
     "technode_compute_sram_nm": 5,
@@ -135,7 +135,7 @@
     "sources": "(NeuroSim, Peng et al. 2019)"
   },
   "node_normalization": {
-    "_description": "Layer 6: IRDS 2022 scaling factors to normalize all configs to 7nm equivalent [41]",
+    "_description": "Layer 6: IRDS 2022 scaling factors to normalize all configs to 7nm equivalent",
     "target_node_nm": 7,
     "scaling_factors": {
       "22nm_to_7nm": {
@@ -158,7 +158,7 @@
       }
     },
     "note": "Applies to peripheral circuits only. Memory cell energy stays at native node.",
-    "source": "[41] IRDS 2022"
+    "source": "IRDS 2022"
   },
   "bit_normalization": {
     "_description": "Layer 3: 1b-TOPS/W formula from ISSCC benchmarking ",

@@ -1,40 +1,40 @@
 group,parameter,value,source_as_recorded_in_config,paper_reference,file
-Layer 1 shared periphery,peripheral_technode_nm,7,,"Peng et al. 2019, DNN+NeuroSim [peng2019dnnneurosim]; buffers: Balasubramonian et al. 2017, CACTI 7.0 [balasubramonian2017cacti]",master_config.json
-Layer 1 shared periphery,bert_seq_len,128,,"Peng et al. 2019, DNN+NeuroSim [peng2019dnnneurosim]; buffers: Balasubramonian et al. 2017, CACTI 7.0 [balasubramonian2017cacti]",master_config.json
-Layer 1 shared periphery,bert_hidden,768,,"Peng et al. 2019, DNN+NeuroSim [peng2019dnnneurosim]; buffers: Balasubramonian et al. 2017, CACTI 7.0 [balasubramonian2017cacti]",master_config.json
-Layer 1 shared periphery,bert_intermediate,3072,,"Peng et al. 2019, DNN+NeuroSim [peng2019dnnneurosim]; buffers: Balasubramonian et al. 2017, CACTI 7.0 [balasubramonian2017cacti]",master_config.json
-Layer 1 shared periphery,bert_layers,12,,"Peng et al. 2019, DNN+NeuroSim [peng2019dnnneurosim]; buffers: Balasubramonian et al. 2017, CACTI 7.0 [balasubramonian2017cacti]",master_config.json
-Layer 1 shared periphery,bert_heads,12,,"Peng et al. 2019, DNN+NeuroSim [peng2019dnnneurosim]; buffers: Balasubramonian et al. 2017, CACTI 7.0 [balasubramonian2017cacti]",master_config.json
+Layer 1 shared periphery,peripheral_technode_nm,7,,Shared 7 nm periphery (Layer 1); NeuroSim V1.4 peripheral models [lee2024neurosim],master_config.json
+Layer 1 shared periphery,bert_seq_len,128,,"BERT-Base architecture, Devlin et al. 2019 [devlin2019bert]",master_config.json
+Layer 1 shared periphery,bert_hidden,768,,"BERT-Base architecture, Devlin et al. 2019 [devlin2019bert]",master_config.json
+Layer 1 shared periphery,bert_intermediate,3072,,"BERT-Base architecture, Devlin et al. 2019 [devlin2019bert]",master_config.json
+Layer 1 shared periphery,bert_layers,12,,"BERT-Base architecture, Devlin et al. 2019 [devlin2019bert]",master_config.json
+Layer 1 shared periphery,bert_heads,12,,"BERT-Base architecture, Devlin et al. 2019 [devlin2019bert]",master_config.json
 Layer 1 shared periphery,sram_bitcell_7nm_um2,0.027,,"Wu et al. 2016, TSMC N7 0.027 um2 6T SRAM cell, IEDM [wu2016tsmc7nm]",master_config.json
-Layer 1 shared periphery,sram_read_energy_fJ_per_bit,0.5,,"Peng et al. 2019, DNN+NeuroSim [peng2019dnnneurosim]; buffers: Balasubramonian et al. 2017, CACTI 7.0 [balasubramonian2017cacti]",master_config.json
-Layer 1 shared periphery,sram_write_energy_fJ_per_bit,0.6,,"Peng et al. 2019, DNN+NeuroSim [peng2019dnnneurosim]; buffers: Balasubramonian et al. 2017, CACTI 7.0 [balasubramonian2017cacti]",master_config.json
-Layer 1 shared periphery,sram_leakage_mW_per_Mb,8.0,,"Peng et al. 2019, DNN+NeuroSim [peng2019dnnneurosim]; buffers: Balasubramonian et al. 2017, CACTI 7.0 [balasubramonian2017cacti]",master_config.json
-Layer 1 shared periphery,sram_access_ns_256KB,0.8,,"Peng et al. 2019, DNN+NeuroSim [peng2019dnnneurosim]; buffers: Balasubramonian et al. 2017, CACTI 7.0 [balasubramonian2017cacti]",master_config.json
-Layer 1 shared periphery,pe_reg_KB,1,,"Peng et al. 2019, DNN+NeuroSim [peng2019dnnneurosim]; buffers: Balasubramonian et al. 2017, CACTI 7.0 [balasubramonian2017cacti]",master_config.json
-Layer 1 shared periphery,pe_reg_count,128,,"Peng et al. 2019, DNN+NeuroSim [peng2019dnnneurosim]; buffers: Balasubramonian et al. 2017, CACTI 7.0 [balasubramonian2017cacti]",master_config.json
-Layer 1 shared periphery,tile_buf_KB,256,,"Peng et al. 2019, DNN+NeuroSim [peng2019dnnneurosim]; buffers: Balasubramonian et al. 2017, CACTI 7.0 [balasubramonian2017cacti]",master_config.json
-Layer 1 shared periphery,tile_buf_count,16,,"Peng et al. 2019, DNN+NeuroSim [peng2019dnnneurosim]; buffers: Balasubramonian et al. 2017, CACTI 7.0 [balasubramonian2017cacti]",master_config.json
-Layer 1 shared periphery,global_buf_KB,2048,,"Peng et al. 2019, DNN+NeuroSim [peng2019dnnneurosim]; buffers: Balasubramonian et al. 2017, CACTI 7.0 [balasubramonian2017cacti]",master_config.json
-Layer 1 shared periphery,global_buf_count,1,,"Peng et al. 2019, DNN+NeuroSim [peng2019dnnneurosim]; buffers: Balasubramonian et al. 2017, CACTI 7.0 [balasubramonian2017cacti]",master_config.json
-Layer 1 shared periphery,adc_type,SAR,,"Peng et al. 2019, DNN+NeuroSim [peng2019dnnneurosim]; buffers: Balasubramonian et al. 2017, CACTI 7.0 [balasubramonian2017cacti]",master_config.json
-Layer 1 shared periphery,adc_bits,8,,"Peng et al. 2019, DNN+NeuroSim [peng2019dnnneurosim]; buffers: Balasubramonian et al. 2017, CACTI 7.0 [balasubramonian2017cacti]",master_config.json
-Layer 1 shared periphery,adc_energy_fJ,30,,"Peng et al. 2019, DNN+NeuroSim [peng2019dnnneurosim]; buffers: Balasubramonian et al. 2017, CACTI 7.0 [balasubramonian2017cacti]",master_config.json
-Layer 1 shared periphery,adc_latency_ns,2,,"Peng et al. 2019, DNN+NeuroSim [peng2019dnnneurosim]; buffers: Balasubramonian et al. 2017, CACTI 7.0 [balasubramonian2017cacti]",master_config.json
-Layer 1 shared periphery,adc_FoM_fJ,4.0,,"Peng et al. 2019, DNN+NeuroSim [peng2019dnnneurosim]; buffers: Balasubramonian et al. 2017, CACTI 7.0 [balasubramonian2017cacti]",master_config.json
-Layer 1 shared periphery,dac_energy_fJ,5,,"Peng et al. 2019, DNN+NeuroSim [peng2019dnnneurosim]; buffers: Balasubramonian et al. 2017, CACTI 7.0 [balasubramonian2017cacti]",master_config.json
-Layer 1 shared periphery,dac_latency_ns,0.5,,"Peng et al. 2019, DNN+NeuroSim [peng2019dnnneurosim]; buffers: Balasubramonian et al. 2017, CACTI 7.0 [balasubramonian2017cacti]",master_config.json
-Layer 1 shared periphery,shift_add_energy_fJ,10,,"Peng et al. 2019, DNN+NeuroSim [peng2019dnnneurosim]; buffers: Balasubramonian et al. 2017, CACTI 7.0 [balasubramonian2017cacti]",master_config.json
-Layer 1 shared periphery,wl_driver_energy_fJ,20,,"Peng et al. 2019, DNN+NeuroSim [peng2019dnnneurosim]; buffers: Balasubramonian et al. 2017, CACTI 7.0 [balasubramonian2017cacti]",master_config.json
-Layer 1 shared periphery,sense_amp_energy_fJ,15,,"Peng et al. 2019, DNN+NeuroSim [peng2019dnnneurosim]; buffers: Balasubramonian et al. 2017, CACTI 7.0 [balasubramonian2017cacti]",master_config.json
-Layer 1 shared periphery,io_pins,256,,"Peng et al. 2019, DNN+NeuroSim [peng2019dnnneurosim]; buffers: Balasubramonian et al. 2017, CACTI 7.0 [balasubramonian2017cacti]",master_config.json
-Layer 1 shared periphery,io_mW_per_pin,3.5,,"Peng et al. 2019, DNN+NeuroSim [peng2019dnnneurosim]; buffers: Balasubramonian et al. 2017, CACTI 7.0 [balasubramonian2017cacti]",master_config.json
-Layer 1 shared periphery,pkg_area_overhead_pct,20,,"Peng et al. 2019, DNN+NeuroSim [peng2019dnnneurosim]; buffers: Balasubramonian et al. 2017, CACTI 7.0 [balasubramonian2017cacti]",master_config.json
-Layer 1 shared periphery,hbm2e_bw_GBps,460,,"Peng et al. 2019, DNN+NeuroSim [peng2019dnnneurosim]; buffers: Balasubramonian et al. 2017, CACTI 7.0 [balasubramonian2017cacti]",master_config.json
-Layer 1 shared periphery,hbm2e_pJ_per_bit,3.9,,"Peng et al. 2019, DNN+NeuroSim [peng2019dnnneurosim]; buffers: Balasubramonian et al. 2017, CACTI 7.0 [balasubramonian2017cacti]",master_config.json
-Layer 1 shared periphery,hbm2e_lat_ns,100,,"Peng et al. 2019, DNN+NeuroSim [peng2019dnnneurosim]; buffers: Balasubramonian et al. 2017, CACTI 7.0 [balasubramonian2017cacti]",master_config.json
-Layer 1 shared periphery,hbm3e_bw_GBps,1229,,"Peng et al. 2019, DNN+NeuroSim [peng2019dnnneurosim]; buffers: Balasubramonian et al. 2017, CACTI 7.0 [balasubramonian2017cacti]",master_config.json
-Layer 1 shared periphery,hbm3e_pJ_per_bit,4.05,,"Peng et al. 2019, DNN+NeuroSim [peng2019dnnneurosim]; buffers: Balasubramonian et al. 2017, CACTI 7.0 [balasubramonian2017cacti]",master_config.json
-Layer 1 shared periphery,hbm3e_lat_ns,80,,"Peng et al. 2019, DNN+NeuroSim [peng2019dnnneurosim]; buffers: Balasubramonian et al. 2017, CACTI 7.0 [balasubramonian2017cacti]",master_config.json
+Layer 1 shared periphery,sram_read_energy_fJ_per_bit,0.5,,"On-chip buffers, CACTI 7.0, Balasubramonian et al. 2017 [balasubramonian2017cacti]",master_config.json
+Layer 1 shared periphery,sram_write_energy_fJ_per_bit,0.6,,"On-chip buffers, CACTI 7.0, Balasubramonian et al. 2017 [balasubramonian2017cacti]",master_config.json
+Layer 1 shared periphery,sram_leakage_mW_per_Mb,8.0,,"On-chip buffers, CACTI 7.0, Balasubramonian et al. 2017 [balasubramonian2017cacti]",master_config.json
+Layer 1 shared periphery,sram_access_ns_256KB,0.8,,"On-chip buffers, CACTI 7.0, Balasubramonian et al. 2017 [balasubramonian2017cacti]",master_config.json
+Layer 1 shared periphery,pe_reg_KB,1,,"On-chip buffers, CACTI 7.0, Balasubramonian et al. 2017 [balasubramonian2017cacti]",master_config.json
+Layer 1 shared periphery,pe_reg_count,128,,"On-chip buffers, CACTI 7.0, Balasubramonian et al. 2017 [balasubramonian2017cacti]",master_config.json
+Layer 1 shared periphery,tile_buf_KB,256,,"On-chip buffers, CACTI 7.0, Balasubramonian et al. 2017 [balasubramonian2017cacti]",master_config.json
+Layer 1 shared periphery,tile_buf_count,16,,"On-chip buffers, CACTI 7.0, Balasubramonian et al. 2017 [balasubramonian2017cacti]",master_config.json
+Layer 1 shared periphery,global_buf_KB,2048,,"On-chip buffers, CACTI 7.0, Balasubramonian et al. 2017 [balasubramonian2017cacti]",master_config.json
+Layer 1 shared periphery,global_buf_count,1,,"On-chip buffers, CACTI 7.0, Balasubramonian et al. 2017 [balasubramonian2017cacti]",master_config.json
+Layer 1 shared periphery,adc_type,SAR,,"Shared 8-bit column converter, 30 fJ and 2 ns (Layer 1); resolution law of Sun et al. 2023 [sun2023aimcdimc]; checked against measured macros (Supplementary Tables S6, S9) and swept in Table S15",master_config.json
+Layer 1 shared periphery,adc_bits,8,,"Shared 8-bit column converter, 30 fJ and 2 ns (Layer 1); resolution law of Sun et al. 2023 [sun2023aimcdimc]; checked against measured macros (Supplementary Tables S6, S9) and swept in Table S15",master_config.json
+Layer 1 shared periphery,adc_energy_fJ,30,,"Shared 8-bit column converter, 30 fJ and 2 ns (Layer 1); resolution law of Sun et al. 2023 [sun2023aimcdimc]; checked against measured macros (Supplementary Tables S6, S9) and swept in Table S15",master_config.json
+Layer 1 shared periphery,adc_latency_ns,2,,"Shared 8-bit column converter, 30 fJ and 2 ns (Layer 1); resolution law of Sun et al. 2023 [sun2023aimcdimc]; checked against measured macros (Supplementary Tables S6, S9) and swept in Table S15",master_config.json
+Layer 1 shared periphery,adc_FoM_fJ,4.0,,Murmann ADC survey [murmann2024adcsurvey]; reference only,master_config.json
+Layer 1 shared periphery,dac_energy_fJ,5,,"1-bit input DAC, Chi et al. ISCA 2016 (PRIME); NeuroSim V1.4 [lee2024neurosim]",master_config.json
+Layer 1 shared periphery,dac_latency_ns,0.5,,"1-bit input DAC, Chi et al. ISCA 2016 (PRIME); NeuroSim V1.4 [lee2024neurosim]",master_config.json
+Layer 1 shared periphery,shift_add_energy_fJ,10,,"NeuroSim V1.4 peripheral model, Lee et al. 2024 [lee2024neurosim]",master_config.json
+Layer 1 shared periphery,wl_driver_energy_fJ,20,,"NeuroSim V1.4 peripheral model, Lee et al. 2024 [lee2024neurosim]",master_config.json
+Layer 1 shared periphery,sense_amp_energy_fJ,15,,"NeuroSim V1.4 peripheral model, Lee et al. 2024 [lee2024neurosim]",master_config.json
+Layer 1 shared periphery,io_pins,256,,I/O sensitivity case only (main model charges I/O per bit inside HBM2E): Mansuri et al. 2013 [mansuri2013parallel]; Hwang et al. 2020 [hwang2020hbm2e],master_config.json
+Layer 1 shared periphery,io_mW_per_pin,3.5,,"About 3.2 mW per lane at 4 Gb/s and 0.8 pJ/bit, Mansuri et al. 2013 [mansuri2013parallel]; 3.4 mW per HBM2E pin at 3.2 Gb/s and 1.07 pJ/bit, Hwang et al. 2020 [hwang2020hbm2e]; sensitivity case only",master_config.json
+Layer 1 shared periphery,pkg_area_overhead_pct,20,,declared in master_config.json; not used in any calculation,master_config.json
+Layer 1 shared periphery,hbm2e_bw_GBps,460,,"SK Hynix HBM2E (2021); energy per bit incl. interface I/O, O'Connor et al. 2017 [oconnor2017fgdram]",master_config.json
+Layer 1 shared periphery,hbm2e_pJ_per_bit,3.9,,"SK Hynix HBM2E (2021); energy per bit incl. interface I/O, O'Connor et al. 2017 [oconnor2017fgdram]",master_config.json
+Layer 1 shared periphery,hbm2e_lat_ns,100,,declared in master_config.json; not used in any calculation,master_config.json
+Layer 1 shared periphery,hbm3e_bw_GBps,1229,,Samsung HBM3E (2024); JEDEC JESD238A (2023); DRAM sweep only (Supplementary Table S2),master_config.json
+Layer 1 shared periphery,hbm3e_pJ_per_bit,4.05,,Samsung HBM3E (2024); JEDEC JESD238A (2023); DRAM sweep only (Supplementary Table S2),master_config.json
+Layer 1 shared periphery,hbm3e_lat_ns,80,,Samsung HBM3E (2024); JEDEC JESD238A (2023); DRAM sweep only (Supplementary Table S2),master_config.json
 "Digital baseline, 7 nm",technode_nm,7,"(NeuroSim, Peng et al. 2019; TPU v4, Jouppi et al. 2023)","Jouppi et al. 2023, TPU v4 [jouppi2023tpuv4]; Peng et al. 2019 [peng2019dnnneurosim]",master_config.json
 "Digital baseline, 7 nm",compute_type,Digital MAC (systolic weight-stationary),"(NeuroSim, Peng et al. 2019; TPU v4, Jouppi et al. 2023)","Jouppi et al. 2023, TPU v4 [jouppi2023tpuv4]; Peng et al. 2019 [peng2019dnnneurosim]",master_config.json
 "Digital baseline, 7 nm",storage,SRAM register file (volatile),"(NeuroSim, Peng et al. 2019; TPU v4, Jouppi et al. 2023)","Jouppi et al. 2023, TPU v4 [jouppi2023tpuv4]; Peng et al. 2019 [peng2019dnnneurosim]",master_config.json
@@ -47,42 +47,42 @@ Layer 1 shared periphery,hbm3e_lat_ns,80,,"Peng et al. 2019, DNN+NeuroSim [peng2
 "Digital baseline, 7 nm",endurance,Unlimited,"(NeuroSim, Peng et al. 2019; TPU v4, Jouppi et al. 2023)","Jouppi et al. 2023, TPU v4 [jouppi2023tpuv4]; Peng et al. 2019 [peng2019dnnneurosim]",master_config.json
 "Digital baseline, 7 nm",variability_pct,0,"(NeuroSim, Peng et al. 2019; TPU v4, Jouppi et al. 2023)","Jouppi et al. 2023, TPU v4 [jouppi2023tpuv4]; Peng et al. 2019 [peng2019dnnneurosim]",master_config.json
 "Digital baseline, 7 nm",subarray_size,128,"(NeuroSim, Peng et al. 2019; TPU v4, Jouppi et al. 2023)","Jouppi et al. 2023, TPU v4 [jouppi2023tpuv4]; Peng et al. 2019 [peng2019dnnneurosim]",master_config.json
-"Config A, 22 nm ReRAM AIMC",technode_nm,22,"(NeuroSim, Peng et al. 2019)",Wen et al. ISSCC 2024 [wen2024reram]; validated against Hung et al. Nat. Electron. 2021 [hung2021fourmegabit],master_config.json
-"Config A, 22 nm ReRAM AIMC",compute_type,Analog current-domain MAC (Ohm's law),"(NeuroSim, Peng et al. 2019)",Wen et al. ISSCC 2024 [wen2024reram]; validated against Hung et al. Nat. Electron. 2021 [hung2021fourmegabit],master_config.json
-"Config A, 22 nm ReRAM AIMC",cell_type,1T1R HfO2 ReRAM,"(NeuroSim, Peng et al. 2019)",Wen et al. ISSCC 2024 [wen2024reram]; validated against Hung et al. Nat. Electron. 2021 [hung2021fourmegabit],master_config.json
-"Config A, 22 nm ReRAM AIMC",cell_area_F2,4,"(NeuroSim, Peng et al. 2019)",Wen et al. ISSCC 2024 [wen2024reram]; validated against Hung et al. Nat. Electron. 2021 [hung2021fourmegabit],master_config.json
-"Config A, 22 nm ReRAM AIMC",cellBit,4,"(NeuroSim, Peng et al. 2019)",Wen et al. ISSCC 2024 [wen2024reram]; validated against Hung et al. Nat. Electron. 2021 [hung2021fourmegabit],master_config.json
-"Config A, 22 nm ReRAM AIMC",Ron_ohm,10000.0,"(NeuroSim, Peng et al. 2019)",Wen et al. ISSCC 2024 [wen2024reram]; validated against Hung et al. Nat. Electron. 2021 [hung2021fourmegabit],master_config.json
-"Config A, 22 nm ReRAM AIMC",Roff_ohm,1000000.0,"(NeuroSim, Peng et al. 2019)",Wen et al. ISSCC 2024 [wen2024reram]; validated against Hung et al. Nat. Electron. 2021 [hung2021fourmegabit],master_config.json
-"Config A, 22 nm ReRAM AIMC",Ron_Roff_ratio,100,"(NeuroSim, Peng et al. 2019)",Wen et al. ISSCC 2024 [wen2024reram]; validated against Hung et al. Nat. Electron. 2021 [hung2021fourmegabit],master_config.json
-"Config A, 22 nm ReRAM AIMC",read_V,0.2,"(NeuroSim, Peng et al. 2019)",Wen et al. ISSCC 2024 [wen2024reram]; validated against Hung et al. Nat. Electron. 2021 [hung2021fourmegabit],master_config.json
-"Config A, 22 nm ReRAM AIMC",sigma_Ron_pct,15,"(NeuroSim, Peng et al. 2019)",Wen et al. ISSCC 2024 [wen2024reram]; validated against Hung et al. Nat. Electron. 2021 [hung2021fourmegabit],master_config.json
-"Config A, 22 nm ReRAM AIMC",sigma_Roff_pct,25,"(NeuroSim, Peng et al. 2019)",Wen et al. ISSCC 2024 [wen2024reram]; validated against Hung et al. Nat. Electron. 2021 [hung2021fourmegabit],master_config.json
-"Config A, 22 nm ReRAM AIMC",IR_drop_pct,5,"(NeuroSim, Peng et al. 2019)",Wen et al. ISSCC 2024 [wen2024reram]; validated against Hung et al. Nat. Electron. 2021 [hung2021fourmegabit],master_config.json
-"Config A, 22 nm ReRAM AIMC",wire_R_per_cell_ohm,2.5,"(NeuroSim, Peng et al. 2019)",Wen et al. ISSCC 2024 [wen2024reram]; validated against Hung et al. Nat. Electron. 2021 [hung2021fourmegabit],master_config.json
-"Config A, 22 nm ReRAM AIMC",subarray_size,128,"(NeuroSim, Peng et al. 2019)",Wen et al. ISSCC 2024 [wen2024reram]; validated against Hung et al. Nat. Electron. 2021 [hung2021fourmegabit],master_config.json
-"Config A, 22 nm ReRAM AIMC",volatile,False,"(NeuroSim, Peng et al. 2019)",Wen et al. ISSCC 2024 [wen2024reram]; validated against Hung et al. Nat. Electron. 2021 [hung2021fourmegabit],master_config.json
-"Config A, 22 nm ReRAM AIMC",endurance,1e6-1e12 cycles,"(NeuroSim, Peng et al. 2019)",Wen et al. ISSCC 2024 [wen2024reram]; validated against Hung et al. Nat. Electron. 2021 [hung2021fourmegabit],master_config.json
-"Config A, 22 nm ReRAM AIMC",write_energy_pJ_per_bit,0.5,"(NeuroSim, Peng et al. 2019)",Wen et al. ISSCC 2024 [wen2024reram]; validated against Hung et al. Nat. Electron. 2021 [hung2021fourmegabit],master_config.json
-"Config A, 22 nm ReRAM AIMC",peripheral_overhead_x,2.8,"(NeuroSim, Peng et al. 2019)",Wen et al. ISSCC 2024 [wen2024reram]; validated against Hung et al. Nat. Electron. 2021 [hung2021fourmegabit],master_config.json
-"Config A, 22 nm ReRAM AIMC",needs_adc,True,"(NeuroSim, Peng et al. 2019)",Wen et al. ISSCC 2024 [wen2024reram]; validated against Hung et al. Nat. Electron. 2021 [hung2021fourmegabit],master_config.json
+"Config A, 22 nm ReRAM AIMC",technode_nm,22,"(NeuroSim, Peng et al. 2019)","22 nm foundry ReRAM of Wen et al. ISSCC 2024 [wen2024reram]; model compared with Xue et al. 2020 [xue2020isscc, xue2020jssc] and Hung et al. 2021 [hung2021fourmegabit] (Supplementary Table S6)",master_config.json
+"Config A, 22 nm ReRAM AIMC",compute_type,Analog current-domain MAC (Ohm's law),"(NeuroSim, Peng et al. 2019)","22 nm 1T1R ReRAM, Wen et al. ISSCC 2024 [wen2024reram]; NeuroSim crossbar model [peng2019dnnneurosim]",master_config.json
+"Config A, 22 nm ReRAM AIMC",cell_type,1T1R HfO2 ReRAM,"(NeuroSim, Peng et al. 2019)","22 nm 1T1R ReRAM, Wen et al. ISSCC 2024 [wen2024reram]; NeuroSim crossbar model [peng2019dnnneurosim]",master_config.json
+"Config A, 22 nm ReRAM AIMC",cell_area_F2,4,"(NeuroSim, Peng et al. 2019)","4F^2 1T1R crossbar, NeuroSim V1.4 [lee2024neurosim]; larger cells in Supplementary Table S11",master_config.json
+"Config A, 22 nm ReRAM AIMC",cellBit,4,"(NeuroSim, Peng et al. 2019)",Modeling assumption representative of HfO2 1T1R cells (Supplementary Note S5); disclosed in Table S5,master_config.json
+"Config A, 22 nm ReRAM AIMC",Ron_ohm,10000.0,"(NeuroSim, Peng et al. 2019)",Modeling assumption representative of HfO2 1T1R cells (Supplementary Note S5); disclosed in Table S5,master_config.json
+"Config A, 22 nm ReRAM AIMC",Roff_ohm,1000000.0,"(NeuroSim, Peng et al. 2019)",Modeling assumption representative of HfO2 1T1R cells (Supplementary Note S5); disclosed in Table S5,master_config.json
+"Config A, 22 nm ReRAM AIMC",Ron_Roff_ratio,100,"(NeuroSim, Peng et al. 2019)",Modeling assumption representative of HfO2 1T1R cells (Supplementary Note S5); disclosed in Table S5,master_config.json
+"Config A, 22 nm ReRAM AIMC",read_V,0.2,"(NeuroSim, Peng et al. 2019)",declared in master_config.json; not used in any calculation,master_config.json
+"Config A, 22 nm ReRAM AIMC",sigma_Ron_pct,15,"(NeuroSim, Peng et al. 2019)",Modeling assumption representative of HfO2 1T1R cells (Supplementary Note S5); disclosed in Table S5,master_config.json
+"Config A, 22 nm ReRAM AIMC",sigma_Roff_pct,25,"(NeuroSim, Peng et al. 2019)",Modeling assumption representative of HfO2 1T1R cells (Supplementary Note S5); disclosed in Table S5,master_config.json
+"Config A, 22 nm ReRAM AIMC",IR_drop_pct,5,"(NeuroSim, Peng et al. 2019)",Modeling assumption; accuracy impact and mitigation in Supplementary Table S14,master_config.json
+"Config A, 22 nm ReRAM AIMC",wire_R_per_cell_ohm,2.5,"(NeuroSim, Peng et al. 2019)",Modeling assumption; enters only through the IR-drop accuracy model (Supplementary Table S14),master_config.json
+"Config A, 22 nm ReRAM AIMC",subarray_size,128,"(NeuroSim, Peng et al. 2019)","22 nm 1T1R ReRAM, Wen et al. ISSCC 2024 [wen2024reram]; NeuroSim crossbar model [peng2019dnnneurosim]",master_config.json
+"Config A, 22 nm ReRAM AIMC",volatile,False,"(NeuroSim, Peng et al. 2019)","22 nm 1T1R ReRAM, Wen et al. ISSCC 2024 [wen2024reram]; NeuroSim crossbar model [peng2019dnnneurosim]",master_config.json
+"Config A, 22 nm ReRAM AIMC",endurance,1e6-1e12 cycles,"(NeuroSim, Peng et al. 2019)","Rated range for ReRAM; not a TOMAS test, weights are written once (Section IV-D)",master_config.json
+"Config A, 22 nm ReRAM AIMC",write_energy_pJ_per_bit,0.5,"(NeuroSim, Peng et al. 2019)",declared in master_config.json; not used in any calculation,master_config.json
+"Config A, 22 nm ReRAM AIMC",peripheral_overhead_x,2.8,"(NeuroSim, Peng et al. 2019)","Periphery area per cell area, DNN+NeuroSim analytical [peng2019dnnneurosim]",master_config.json
+"Config A, 22 nm ReRAM AIMC",needs_adc,True,"(NeuroSim, Peng et al. 2019)","22 nm 1T1R ReRAM, Wen et al. ISSCC 2024 [wen2024reram]; NeuroSim crossbar model [peng2019dnnneurosim]",master_config.json
 "Config B, 28 nm FeFET CIM",technode_nm,28,"(NeuroSim, Peng et al. 2019)",Soliman et al. Nat. Commun. 2023 [soliman2023fefet],master_config.json
 "Config B, 28 nm FeFET CIM",compute_type,Threshold-voltage-domain MAC (time-current encoding),"(NeuroSim, Peng et al. 2019)",Soliman et al. Nat. Commun. 2023 [soliman2023fefet],master_config.json
 "Config B, 28 nm FeFET CIM",cell_type,1FeFET-1R (HfO2-doped HKMG),"(NeuroSim, Peng et al. 2019)",Soliman et al. Nat. Commun. 2023 [soliman2023fefet],master_config.json
 "Config B, 28 nm FeFET CIM",cell_area_F2,6,"(NeuroSim, Peng et al. 2019)",Soliman et al. Nat. Commun. 2023 [soliman2023fefet],master_config.json
-"Config B, 28 nm FeFET CIM",cellBit,3,"(NeuroSim, Peng et al. 2019)",Soliman et al. Nat. Commun. 2023 [soliman2023fefet],master_config.json
+"Config B, 28 nm FeFET CIM",cellBit,3,"(NeuroSim, Peng et al. 2019)",Stress case: 3-bit cells extrapolated from the 2-bit cells measured by Soliman et al. 2023 [soliman2023fefet] (Table S5 footnote),master_config.json
 "Config B, 28 nm FeFET CIM",Vth_window_V,1.4,"(NeuroSim, Peng et al. 2019)",Soliman et al. Nat. Commun. 2023 [soliman2023fefet],master_config.json
 "Config B, 28 nm FeFET CIM",Ion_uA,30,"(NeuroSim, Peng et al. 2019)",Soliman et al. Nat. Commun. 2023 [soliman2023fefet],master_config.json
 "Config B, 28 nm FeFET CIM",Ioff_pA,100,"(NeuroSim, Peng et al. 2019)",Soliman et al. Nat. Commun. 2023 [soliman2023fefet],master_config.json
 "Config B, 28 nm FeFET CIM",Ion_Ioff_ratio,10000.0,"(NeuroSim, Peng et al. 2019)",Soliman et al. Nat. Commun. 2023 [soliman2023fefet],master_config.json
-"Config B, 28 nm FeFET CIM",sigma_Vth_mV,75,"(NeuroSim, Peng et al. 2019)",Soliman et al. Nat. Commun. 2023 [soliman2023fefet],master_config.json
+"Config B, 28 nm FeFET CIM",sigma_Vth_mV,75,"(NeuroSim, Peng et al. 2019)",Stress case: about twice the 38 mV maximum measured by Soliman et al. 2023 [soliman2023fefet] (Table S5 footnote),master_config.json
 "Config B, 28 nm FeFET CIM",write_V,3.5,"(NeuroSim, Peng et al. 2019)",Soliman et al. Nat. Commun. 2023 [soliman2023fefet],master_config.json
-"Config B, 28 nm FeFET CIM",write_pulse_us,1.0,"(NeuroSim, Peng et al. 2019)",Soliman et al. Nat. Commun. 2023 [soliman2023fefet],master_config.json
+"Config B, 28 nm FeFET CIM",write_pulse_us,1.0,"(NeuroSim, Peng et al. 2019)",declared in master_config.json; not used in any calculation,master_config.json
 "Config B, 28 nm FeFET CIM",subarray_size,64,"(NeuroSim, Peng et al. 2019)",Soliman et al. Nat. Commun. 2023 [soliman2023fefet],master_config.json
 "Config B, 28 nm FeFET CIM",volatile,False,"(NeuroSim, Peng et al. 2019)",Soliman et al. Nat. Commun. 2023 [soliman2023fefet],master_config.json
-"Config B, 28 nm FeFET CIM",endurance,1e4-1e5 cycles,"(NeuroSim, Peng et al. 2019)",Soliman et al. Nat. Commun. 2023 [soliman2023fefet],master_config.json
+"Config B, 28 nm FeFET CIM",endurance,1e4-1e5 cycles,"(NeuroSim, Peng et al. 2019)","Rated range for FeFET, Soliman et al. 2023 [soliman2023fefet]; not a TOMAS test",master_config.json
 "Config B, 28 nm FeFET CIM",write_energy_fJ_per_bit,5,"(NeuroSim, Peng et al. 2019)",Soliman et al. Nat. Commun. 2023 [soliman2023fefet],master_config.json
-"Config B, 28 nm FeFET CIM",peripheral_overhead_x,2.5,"(NeuroSim, Peng et al. 2019)",Soliman et al. Nat. Commun. 2023 [soliman2023fefet],master_config.json
+"Config B, 28 nm FeFET CIM",peripheral_overhead_x,2.5,"(NeuroSim, Peng et al. 2019)","Periphery area per cell area, DNN+NeuroSim analytical [peng2019dnnneurosim]",master_config.json
 "Config B, 28 nm FeFET CIM",needs_adc,True,"(NeuroSim, Peng et al. 2019)",Soliman et al. Nat. Commun. 2023 [soliman2023fefet],master_config.json
 "Config C, ReRAM AIMC + 5 nm SRAM CIM",technode_compute_sram_nm,5,"(NeuroSim, Peng et al. 2019)",ReRAM as Config A [wen2024reram]; SRAM cell energy fitted to Dong et al. ISSCC 2020 [dong2020cim]; node reference Fujiwara et al. ISSCC 2022 [fujiwara2022digital],master_config.json
 "Config C, ReRAM AIMC + 5 nm SRAM CIM",technode_compute_reram_nm,22,"(NeuroSim, Peng et al. 2019)",ReRAM as Config A [wen2024reram]; SRAM cell energy fitted to Dong et al. ISSCC 2020 [dong2020cim]; node reference Fujiwara et al. ISSCC 2022 [fujiwara2022digital],master_config.json
@@ -103,27 +103,27 @@ Layer 1 shared periphery,hbm3e_lat_ns,80,,"Peng et al. 2019, DNN+NeuroSim [peng2
 "Config C, ReRAM AIMC + 5 nm SRAM CIM",needs_adc,True,"(NeuroSim, Peng et al. 2019)",ReRAM as Config A [wen2024reram]; SRAM cell energy fitted to Dong et al. ISSCC 2020 [dong2020cim]; node reference Fujiwara et al. ISSCC 2022 [fujiwara2022digital],master_config.json
 "Config C, ReRAM AIMC + 5 nm SRAM CIM",peripheral_overhead_x,2.5,"(NeuroSim, Peng et al. 2019)",ReRAM as Config A [wen2024reram]; SRAM cell energy fitted to Dong et al. ISSCC 2020 [dong2020cim]; node reference Fujiwara et al. ISSCC 2022 [fujiwara2022digital],master_config.json
 "Config C, ReRAM AIMC + 5 nm SRAM CIM",silicon_TOPS_W_sram,"351 (Dong ISSCC'20 7nm), 254 (ISSCC'22 5nm)","(NeuroSim, Peng et al. 2019)",ReRAM as Config A [wen2024reram]; SRAM cell energy fitted to Dong et al. ISSCC 2020 [dong2020cim]; node reference Fujiwara et al. ISSCC 2022 [fujiwara2022digital],master_config.json
-"Config C, ReRAM AIMC + 5 nm SRAM CIM",silicon_TOPS_W_reram,60.64 (Chang ISSCC'22 40nm hybrid),"(NeuroSim, Peng et al. 2019)",ReRAM as Config A [wen2024reram]; SRAM cell energy fitted to Dong et al. ISSCC 2020 [dong2020cim]; node reference Fujiwara et al. ISSCC 2022 [fujiwara2022digital],master_config.json
-Layer 6 node normalization,target_node_nm,7,[41] IRDS 2022,IRDS 2022 [irds2022moremoore]; Stillmaker and Baas 2017 [stillmaker2017scaling],master_config.json
-Layer 6 node normalization,scaling_factors.22nm_to_7nm.energy,0.25,[41] IRDS 2022,IRDS 2022 [irds2022moremoore]; Stillmaker and Baas 2017 [stillmaker2017scaling],master_config.json
-Layer 6 node normalization,scaling_factors.22nm_to_7nm.area,0.1,[41] IRDS 2022,IRDS 2022 [irds2022moremoore]; Stillmaker and Baas 2017 [stillmaker2017scaling],master_config.json
-Layer 6 node normalization,scaling_factors.22nm_to_7nm.delay,0.4,[41] IRDS 2022,IRDS 2022 [irds2022moremoore]; Stillmaker and Baas 2017 [stillmaker2017scaling],master_config.json
-Layer 6 node normalization,scaling_factors.22nm_to_7nm.leakage,2.5,[41] IRDS 2022,IRDS 2022 [irds2022moremoore]; Stillmaker and Baas 2017 [stillmaker2017scaling],master_config.json
-Layer 6 node normalization,scaling_factors.28nm_to_7nm.energy,0.2,[41] IRDS 2022,IRDS 2022 [irds2022moremoore]; Stillmaker and Baas 2017 [stillmaker2017scaling],master_config.json
-Layer 6 node normalization,scaling_factors.28nm_to_7nm.area,0.08,[41] IRDS 2022,IRDS 2022 [irds2022moremoore]; Stillmaker and Baas 2017 [stillmaker2017scaling],master_config.json
-Layer 6 node normalization,scaling_factors.28nm_to_7nm.delay,0.35,[41] IRDS 2022,IRDS 2022 [irds2022moremoore]; Stillmaker and Baas 2017 [stillmaker2017scaling],master_config.json
-Layer 6 node normalization,scaling_factors.28nm_to_7nm.leakage,2.8,[41] IRDS 2022,IRDS 2022 [irds2022moremoore]; Stillmaker and Baas 2017 [stillmaker2017scaling],master_config.json
-Layer 6 node normalization,scaling_factors.5nm_to_7nm.energy,1.15,[41] IRDS 2022,IRDS 2022 [irds2022moremoore]; Stillmaker and Baas 2017 [stillmaker2017scaling],master_config.json
-Layer 6 node normalization,scaling_factors.5nm_to_7nm.area,1.3,[41] IRDS 2022,IRDS 2022 [irds2022moremoore]; Stillmaker and Baas 2017 [stillmaker2017scaling],master_config.json
-Layer 6 node normalization,scaling_factors.5nm_to_7nm.delay,1.1,[41] IRDS 2022,IRDS 2022 [irds2022moremoore]; Stillmaker and Baas 2017 [stillmaker2017scaling],master_config.json
-Layer 6 node normalization,scaling_factors.5nm_to_7nm.leakage,0.85,[41] IRDS 2022,IRDS 2022 [irds2022moremoore]; Stillmaker and Baas 2017 [stillmaker2017scaling],master_config.json
+"Config C, ReRAM AIMC + 5 nm SRAM CIM",silicon_TOPS_W_reram,60.64 (Chang ISSCC'22 40nm hybrid),"(NeuroSim, Peng et al. 2019)","Closest hardware precedent, Chang et al. ISSCC 2022 (40 nm RRAM/SRAM) [chang2022rram]; reference only",master_config.json
+Layer 6 node normalization,target_node_nm,7,IRDS 2022,IRDS 2022 [irds2022moremoore]; Stillmaker and Baas 2017 [stillmaker2017scaling],master_config.json
+Layer 6 node normalization,scaling_factors.22nm_to_7nm.energy,0.25,IRDS 2022,IRDS 2022 [irds2022moremoore]; Stillmaker and Baas 2017 [stillmaker2017scaling],master_config.json
+Layer 6 node normalization,scaling_factors.22nm_to_7nm.area,0.1,IRDS 2022,IRDS 2022 [irds2022moremoore]; Stillmaker and Baas 2017 [stillmaker2017scaling],master_config.json
+Layer 6 node normalization,scaling_factors.22nm_to_7nm.delay,0.4,IRDS 2022,IRDS 2022 [irds2022moremoore]; Stillmaker and Baas 2017 [stillmaker2017scaling],master_config.json
+Layer 6 node normalization,scaling_factors.22nm_to_7nm.leakage,2.5,IRDS 2022,IRDS 2022 [irds2022moremoore]; Stillmaker and Baas 2017 [stillmaker2017scaling],master_config.json
+Layer 6 node normalization,scaling_factors.28nm_to_7nm.energy,0.2,IRDS 2022,IRDS 2022 [irds2022moremoore]; Stillmaker and Baas 2017 [stillmaker2017scaling],master_config.json
+Layer 6 node normalization,scaling_factors.28nm_to_7nm.area,0.08,IRDS 2022,IRDS 2022 [irds2022moremoore]; Stillmaker and Baas 2017 [stillmaker2017scaling],master_config.json
+Layer 6 node normalization,scaling_factors.28nm_to_7nm.delay,0.35,IRDS 2022,IRDS 2022 [irds2022moremoore]; Stillmaker and Baas 2017 [stillmaker2017scaling],master_config.json
+Layer 6 node normalization,scaling_factors.28nm_to_7nm.leakage,2.8,IRDS 2022,IRDS 2022 [irds2022moremoore]; Stillmaker and Baas 2017 [stillmaker2017scaling],master_config.json
+Layer 6 node normalization,scaling_factors.5nm_to_7nm.energy,1.15,IRDS 2022,IRDS 2022 [irds2022moremoore]; Stillmaker and Baas 2017 [stillmaker2017scaling],master_config.json
+Layer 6 node normalization,scaling_factors.5nm_to_7nm.area,1.3,IRDS 2022,IRDS 2022 [irds2022moremoore]; Stillmaker and Baas 2017 [stillmaker2017scaling],master_config.json
+Layer 6 node normalization,scaling_factors.5nm_to_7nm.delay,1.1,IRDS 2022,IRDS 2022 [irds2022moremoore]; Stillmaker and Baas 2017 [stillmaker2017scaling],master_config.json
+Layer 6 node normalization,scaling_factors.5nm_to_7nm.leakage,0.85,IRDS 2022,IRDS 2022 [irds2022moremoore]; Stillmaker and Baas 2017 [stillmaker2017scaling],master_config.json
 Layer 4 iso-accuracy,target_accuracy_pct,90.0,Phase 1 quantization sweep,Measured in Phase 1 (GLUE SST-2); floor calibrated against Shen et al. 2020 [shen2020qbert],master_config.json
 Layer 4 iso-accuracy,baseline_precision,8,Phase 1 quantization sweep,Measured in Phase 1 (GLUE SST-2); floor calibrated against Shen et al. 2020 [shen2020qbert],master_config.json
 Layer 4 iso-accuracy,config_a_precision,4,Phase 1 quantization sweep,Measured in Phase 1 (GLUE SST-2); floor calibrated against Shen et al. 2020 [shen2020qbert],master_config.json
 Layer 4 iso-accuracy,config_b_precision,3,Phase 1 quantization sweep,Measured in Phase 1 (GLUE SST-2); floor calibrated against Shen et al. 2020 [shen2020qbert],master_config.json
 Layer 4 iso-accuracy,config_c_sram_precision,8,Phase 1 quantization sweep,Measured in Phase 1 (GLUE SST-2); floor calibrated against Shen et al. 2020 [shen2020qbert],master_config.json
 Layer 4 iso-accuracy,config_c_reram_precision,4,Phase 1 quantization sweep,Measured in Phase 1 (GLUE SST-2); floor calibrated against Shen et al. 2020 [shen2020qbert],master_config.json
-Converter model,adc_area_um2,1000,calibrated value (engine v2),Single calibrated value; sensitivity at 500 and 2000 um2 in Section V-E,unified engine (STEP 7.5)
+Converter model,adc_area_um2,1000,calibrated value,"Single calibrated value; sensitivity at 500 and 2,000 um2 in Section V-F and Supplementary Note S7.3",unified engine (STEP 7.5)
 Converter model,resolution_law,ceil(b_in + 0.5*log2 D) <= 8,,"Sun, Houshmand and Verhelst, ICCAD 2023 [sun2023aimcdimc]",unified engine (STEP 7.5)
 Converter model,energy_law_k1_fF,100,,"Sun et al. 2023 [sun2023aimcdimc], Table II; ratio only, anchored at the shared 8-bit 30 fJ point",unified engine (STEP 7.5)
 Converter model,energy_law_k2_aF,1,,"Sun et al. 2023 [sun2023aimcdimc], Table II; ratio only",unified engine (STEP 7.5)

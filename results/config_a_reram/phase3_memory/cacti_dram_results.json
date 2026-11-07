@@ -1,6 +1,6 @@
 {
   "primary": "HBM3E ",
-  "comparison": "HBM2E [27]",
+  "comparison": "HBM2E (SK Hynix HBM2E 2021)",
   "bandwidth_GBps": 1229,
   "energy_per_bit_pJ": 4.05,
   "total_dram_transfer_MB": 70.21,

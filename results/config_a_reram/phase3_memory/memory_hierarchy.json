@@ -5,23 +5,23 @@
       "name": "PE Register",
       "KB": 1,
       "count": 128,
-      "tech": "7nm [22]"
+      "tech": "7nm (TSMC IEDM 2016)"
     },
     {
       "name": "Tile Buffer",
       "KB": 256,
       "count": 16,
-      "tech": "7nm [22]"
+      "tech": "7nm (TSMC IEDM 2016)"
     },
     {
       "name": "Global Buffer",
       "KB": 2048,
       "count": 1,
-      "tech": "7nm [22]"
+      "tech": "7nm (TSMC IEDM 2016)"
     },
     {
       "name": "Off-chip",
-      "type": "HBM3E [26]",
+      "type": "HBM3E (Samsung HBM3E 2024)",
       "GB": 4
     }
   ],

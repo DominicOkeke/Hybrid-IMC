@@ -98,7 +98,7 @@
         "buffer_mm2": 3.108094
       },
       "total_leakage_mW": 411.041792,
-      "model": "STEP 7.5 unified engine v2 (2026-10-15)"
+      "model": "STEP 7.5 unified engine"
     },
     "Config A": {
       "system_energy_uJ": 1753.502869,
@@ -148,7 +148,7 @@
         "buffer_mm2": 3.108094
       },
       "total_leakage_mW": 411.041792,
-      "model": "STEP 7.5 unified engine v2 (2026-10-15)"
+      "model": "STEP 7.5 unified engine"
     },
     "Config B": {
       "system_energy_uJ": 1771.669834,
@@ -198,7 +198,7 @@
         "buffer_mm2": 3.108094
       },
       "total_leakage_mW": 411.041792,
-      "model": "STEP 7.5 unified engine v2 (2026-10-15)"
+      "model": "STEP 7.5 unified engine"
     },
     "Config C": {
       "system_energy_uJ": 1700.962557,
@@ -248,7 +248,7 @@
         "buffer_mm2": 3.108094
       },
       "total_leakage_mW": 411.041792,
-      "model": "STEP 7.5 unified engine v2 (2026-10-15)"
+      "model": "STEP 7.5 unified engine"
     }
   },
   "chip_results": {
@@ -303,7 +303,7 @@
       "throughput_TOPS": 16.384,
       "energy_efficiency_TOPS_W": 5.0,
       "chip_energy_uJ": 2234.725171,
-      "model": "STEP 7.5 unified engine v2 (2026-10-15)"
+      "model": "STEP 7.5 unified engine"
     },
     "Config A": {
       "config": "Config A: ReRAM AIMC (22nm) + 7nm digital logic",
@@ -360,7 +360,7 @@
       "throughput_TOPS": 47.858526,
       "energy_efficiency_TOPS_W": 43.670136,
       "chip_energy_uJ": 255.864236,
-      "model": "STEP 7.5 unified engine v2 (2026-10-15)"
+      "model": "STEP 7.5 unified engine"
     },
     "Config B": {
       "config": "Config B: FeFET CIM (28nm) + 7nm digital logic",
@@ -417,7 +417,7 @@
       "throughput_TOPS": 53.488941,
       "energy_efficiency_TOPS_W": 18.437014,
       "chip_energy_uJ": 606.04313,
-      "model": "STEP 7.5 unified engine v2 (2026-10-15)"
+      "model": "STEP 7.5 unified engine"
     },
     "Config C": {
       "config": "Config C: ReRAM AIMC (22nm) + SRAM CIM (5nm)",
@@ -479,7 +479,7 @@
       "throughput_TOPS": 35.108571,
       "energy_efficiency_TOPS_W": 54.954802,
       "chip_energy_uJ": 203.323923,
-      "model": "STEP 7.5 unified engine v2 (2026-10-15)"
+      "model": "STEP 7.5 unified engine"
     }
   }
 }

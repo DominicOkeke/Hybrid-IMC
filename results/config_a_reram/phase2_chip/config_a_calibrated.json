@@ -38,7 +38,7 @@
   "sram_write_energy_per_bit_fJ": 0.6,
   "sram_leakage_mW_per_Mb": 8.0,
   "sram_access_time_ns_256KB": 0.8,
-  "io_energy_per_bit_pJ": 1.07,
+  "io_energy_per_bit_pJ": 0.8,
   "num_io_pins": 256,
   "io_power_per_pin_mW": 3.5,
   "package_area_overhead_pct": 20,

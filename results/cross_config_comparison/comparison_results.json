@@ -2,11 +2,11 @@
   "methodology": "7-Layer Validated Cross-Technology CIM Benchmark",
   "layers": [
     "L1:Shared baseline",
-    "L2:NeuroSim [29]",
-    "L3:1b-TOPS/W [39]",
+    "L2:NeuroSim V1.4",
+    "L3:1b-TOPS/W",
     "L4:Iso-accuracy 90%",
     "L5:Array/Chip/System",
-    "L6:7nm norm [41]",
+    "L6:7nm norm (IRDS 2022)",
     "L7:Parameter disclosure"
   ],
   "configs": {
@@ -61,7 +61,7 @@
       "throughput_TOPS": 16.384,
       "energy_efficiency_TOPS_W": 5.0,
       "chip_energy_uJ": 2234.725171,
-      "model": "STEP 7.5 unified engine v2 (2026-10-15)"
+      "model": "STEP 7.5 unified engine"
     },
     "Config A (ReRAM)": {
       "config": "Config A: ReRAM AIMC (22nm) + 7nm digital logic",
@@ -118,7 +118,7 @@
       "throughput_TOPS": 47.858526,
       "energy_efficiency_TOPS_W": 43.670136,
       "chip_energy_uJ": 255.864236,
-      "model": "STEP 7.5 unified engine v2 (2026-10-15)"
+      "model": "STEP 7.5 unified engine"
     },
     "Config B (FeFET)": {
       "config": "Config B: FeFET CIM (28nm) + 7nm digital logic",
@@ -175,7 +175,7 @@
       "throughput_TOPS": 53.488941,
       "energy_efficiency_TOPS_W": 18.437014,
       "chip_energy_uJ": 606.04313,
-      "model": "STEP 7.5 unified engine v2 (2026-10-15)"
+      "model": "STEP 7.5 unified engine"
     },
     "Config C (Heterogeneous)": {
       "config": "Config C: ReRAM AIMC (22nm) + SRAM CIM (5nm)",
@@ -237,7 +237,7 @@
       "throughput_TOPS": 35.108571,
       "energy_efficiency_TOPS_W": 54.954802,
       "chip_energy_uJ": 203.323923,
-      "model": "STEP 7.5 unified engine v2 (2026-10-15)"
+      "model": "STEP 7.5 unified engine"
     }
   }
 }

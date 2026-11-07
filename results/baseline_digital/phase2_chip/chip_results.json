@@ -49,5 +49,5 @@
   "throughput_TOPS": 16.384,
   "energy_efficiency_TOPS_W": 5.0,
   "chip_energy_uJ": 2234.725171,
-  "model": "STEP 7.5 unified engine v2 (2026-10-15)"
+  "model": "STEP 7.5 unified engine"
 }
