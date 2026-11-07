@@ -1,0 +1,113 @@
+{
+  "step": "GPU STEP A2 - Layer 4 on four more GLUE tasks (MRPC, RTE, QNLI, CoLA)",
+  "source": "Printed output in the authors' Google Colab run (Tesla T4, PyTorch 2.14.1, Transformers 5.22.1, Datasets 4.8.5), 2026-11-06. Summary of the printed output; re-running GPU STEP A2 regenerates the full file with per-seed values.",
+  "metric_note": "acc = accuracy (%); mcc = Matthews correlation x 100. ideal4 quantizes every weight matrix (embeddings, pooler and classifier included) to 4-bit, as STEP 5.0. full = programming noise + 5% IR drop; mitig = half the spread + IR drop compensated to 0%.",
+  "allowance_points": 2.43,
+  "seeds": 5,
+  "tasks": {
+    "mrpc": {
+      "model": "textattack/bert-base-uncased-MRPC",
+      "metric": "acc",
+      "n": 408,
+      "label_order": "as-is",
+      "fp32": 87.75,
+      "ideal4": 66.67,
+      "adc8": 62.01,
+      "full": {
+        "mean": 47.01,
+        "std": 5.33,
+        "min": 39.95
+      },
+      "mitig": {
+        "mean": 59.85,
+        "std": 3.42,
+        "min": 55.39
+      },
+      "floor": 85.32,
+      "passes": {
+        "ideal4": false,
+        "adc8": false,
+        "full": false,
+        "mitig": false
+      }
+    },
+    "rte": {
+      "model": "textattack/bert-base-uncased-RTE",
+      "metric": "acc",
+      "n": 277,
+      "label_order": "as-is",
+      "fp32": 72.56,
+      "ideal4": 64.98,
+      "adc8": 65.7,
+      "full": {
+        "mean": 60.58,
+        "std": 4.48,
+        "min": 53.07
+      },
+      "mitig": {
+        "mean": 66.43,
+        "std": 0.57,
+        "min": 65.7
+      },
+      "floor": 70.13,
+      "passes": {
+        "ideal4": false,
+        "adc8": false,
+        "full": false,
+        "mitig": false
+      }
+    },
+    "qnli": {
+      "model": "textattack/bert-base-uncased-QNLI",
+      "metric": "acc",
+      "n": 5463,
+      "label_order": "as-is",
+      "fp32": 91.54,
+      "ideal4": 89.15,
+      "adc8": 88.8,
+      "full": {
+        "mean": 85.95,
+        "std": 0.94,
+        "min": 84.46
+      },
+      "mitig": {
+        "mean": 88.52,
+        "std": 0.33,
+        "min": 88.08
+      },
+      "floor": 89.11,
+      "passes": {
+        "ideal4": true,
+        "adc8": false,
+        "full": false,
+        "mitig": false
+      }
+    },
+    "cola": {
+      "model": "textattack/bert-base-uncased-CoLA",
+      "metric": "mcc",
+      "n": 1043,
+      "label_order": "as-is",
+      "fp32": 53.39,
+      "ideal4": 51.83,
+      "adc8": 51.0,
+      "full": {
+        "mean": 46.63,
+        "std": 0.98,
+        "min": 45.91
+      },
+      "mitig": {
+        "mean": 49.21,
+        "std": 1.65,
+        "min": 46.92
+      },
+      "floor": 50.96,
+      "passes": {
+        "ideal4": true,
+        "adc8": true,
+        "full": false,
+        "mitig": false
+      }
+    }
+  }
+}

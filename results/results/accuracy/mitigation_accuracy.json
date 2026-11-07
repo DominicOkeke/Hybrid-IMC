@@ -1,0 +1,115 @@
+{
+  "step": "GPU STEP A1 - SST-2 accuracy with modeled mitigations of the analog non-idealities",
+  "source": "Printed output in the authors' Google Colab run (Tesla T4, PyTorch 2.14.1, Transformers 5.22.1, Datasets 4.8.5), 2026-11-06. Summary of the printed output; re-running GPU STEP A1 regenerates the full file with per-seed values.",
+  "model": "textattack/bert-base-uncased-SST-2",
+  "floor_pct": 90.0,
+  "seeds": 5,
+  "adc_bits": 8,
+  "base_device": {
+    "sigma_R_on_pct": 15,
+    "sigma_R_off_pct": 25,
+    "IR_drop_pct": 5,
+    "subarray_rows": 128
+  },
+  "scenarios": [
+    {
+      "id": "full",
+      "description": "no mitigation (STEP 5.0b 'full')",
+      "spread_factor": 1.0,
+      "ir_drop_pct": 5.0,
+      "rows": 128,
+      "mean_pct": 89.77,
+      "std_pct": 0.26,
+      "min_pct": 89.45,
+      "pass": false
+    },
+    {
+      "id": "wv_half",
+      "description": "write-verify, half the spread",
+      "spread_factor": 0.5,
+      "ir_drop_pct": 5.0,
+      "rows": 128,
+      "mean_pct": 90.57,
+      "std_pct": 0.43,
+      "min_pct": 89.91,
+      "pass": false
+    },
+    {
+      "id": "wv_yoon",
+      "description": "write-verify, spread / 2.95 (measured, Yoon et al., IEEE JSSC 2022)",
+      "spread_factor": 0.339,
+      "ir_drop_pct": 5.0,
+      "rows": 128,
+      "mean_pct": 90.76,
+      "std_pct": 0.26,
+      "min_pct": 90.48,
+      "pass": true
+    },
+    {
+      "id": "wv_quarter",
+      "description": "write-verify, a quarter of the spread",
+      "spread_factor": 0.25,
+      "ir_drop_pct": 5.0,
+      "rows": 128,
+      "mean_pct": 90.69,
+      "std_pct": 0.33,
+      "min_pct": 90.25,
+      "pass": true
+    },
+    {
+      "id": "irc_half",
+      "description": "IR-drop compensation to half the drop",
+      "spread_factor": 1.0,
+      "ir_drop_pct": 2.5,
+      "rows": 128,
+      "mean_pct": 89.86,
+      "std_pct": 0.29,
+      "min_pct": 89.45,
+      "pass": false
+    },
+    {
+      "id": "irc_full",
+      "description": "IR-drop compensation to 0%",
+      "spread_factor": 1.0,
+      "ir_drop_pct": 0.0,
+      "rows": 128,
+      "mean_pct": 90.02,
+      "std_pct": 0.4,
+      "min_pct": 89.45,
+      "pass": false
+    },
+    {
+      "id": "wv_half_irc",
+      "description": "write-verify (half spread) + IR compensation to 0%",
+      "spread_factor": 0.5,
+      "ir_drop_pct": 0.0,
+      "rows": 128,
+      "mean_pct": 91.03,
+      "std_pct": 0.32,
+      "min_pct": 90.6,
+      "pass": true
+    },
+    {
+      "id": "rows64",
+      "description": "64-row subarrays (half the IR drop)",
+      "spread_factor": 1.0,
+      "ir_drop_pct": 2.5,
+      "rows": 64,
+      "mean_pct": 89.93,
+      "std_pct": 0.76,
+      "min_pct": 88.76,
+      "pass": false
+    },
+    {
+      "id": "rows64_wv_half",
+      "description": "64-row subarrays + write-verify (half spread)",
+      "spread_factor": 0.5,
+      "ir_drop_pct": 2.5,
+      "rows": 64,
+      "mean_pct": 90.83,
+      "std_pct": 0.23,
+      "min_pct": 90.6,
+      "pass": true
+    }
+  ]
+}

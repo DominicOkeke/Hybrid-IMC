@@ -3,7 +3,7 @@ message: "If you use this software or its results, please cite it as below."
 title: "TOMAS: Operation-Aware Hybrid of In-Memory AI Accelerators for Energy-Efficient Transformer Inference -- simulation code and data"
 type: software
 version: "2.1"
-date-released: "2026-11-04"
+date-released: "2026-11-07"
 license: BSD-3-Clause
 repository-code: "https://github.com/DominicOkeke/Hybrid-IMC"
 authors:
