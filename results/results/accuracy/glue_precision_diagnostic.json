@@ -1,0 +1,181 @@
+{
+  "step": "GPU STEP A3 - where the 4-bit loss on MRPC, RTE, QNLI and CoLA comes from",
+  "source": "Authors' Google Colab run (Tesla T4), 2026-11-06; copy of glue_precision_diagnostic.json written by GPU STEP A3. Re-running the cell regenerates it.",
+  "metric_note": "acc = accuracy (%); mcc = Matthews correlation x 100. all4: every weight matrix 4-bit (STEP 5.0). staticB: the 72 static matrices at B bits, all other matrices 8-bit. static4_adc8: static4 on the analog engine, 8-bit ADC, no noise. static4_wv: + programming noise at sigma/2.95 (write-verify, Yoon et al. 2022) and 5% IR drop, 5 seeds.",
+  "allowance_points": 2.43,
+  "n_seeds": 5,
+  "device": {
+    "SIG_ON": 0.15,
+    "SIG_OFF": 0.25,
+    "IR_DROP": 0.05,
+    "ROWS": 128
+  },
+  "wv_spread": 0.3389830508474576,
+  "tasks": {
+    "sst2": {
+      "model": "textattack/bert-base-uncased-SST-2",
+      "metric": "acc",
+      "n": 872,
+      "label_order": "as-is",
+      "fp32": 92.43119266055045,
+      "all4": 90.94036697247707,
+      "static4": 91.1697247706422,
+      "static5": 92.08715596330275,
+      "static6": 91.62844036697247,
+      "static4_adc8": 91.39908256880734,
+      "static4_wv": {
+        "mean": 91.39908256880736,
+        "std": 0.16218045440058315,
+        "min": 91.1697247706422,
+        "values": [
+          91.2844,
+          91.5138,
+          91.5138,
+          91.1697,
+          91.5138
+        ]
+      },
+      "floor": 90.00119266055044,
+      "passes": {
+        "all4": true,
+        "static4": true,
+        "static5": true,
+        "static6": true,
+        "static4_adc8": true,
+        "static4_wv": true
+      }
+    },
+    "mrpc": {
+      "model": "textattack/bert-base-uncased-MRPC",
+      "metric": "acc",
+      "n": 408,
+      "label_order": "as-is",
+      "fp32": 87.74509803921569,
+      "all4": 66.66666666666666,
+      "static4": 86.76470588235294,
+      "static5": 87.5,
+      "static6": 87.25490196078431,
+      "static4_adc8": 85.29411764705883,
+      "static4_wv": {
+        "mean": 86.8627450980392,
+        "std": 0.4101274639872875,
+        "min": 86.27450980392157,
+        "values": [
+          86.7647,
+          86.7647,
+          87.2549,
+          87.2549,
+          86.2745
+        ]
+      },
+      "floor": 85.31509803921568,
+      "passes": {
+        "all4": false,
+        "static4": true,
+        "static5": true,
+        "static6": true,
+        "static4_adc8": false,
+        "static4_wv": true
+      }
+    },
+    "rte": {
+      "model": "textattack/bert-base-uncased-RTE",
+      "metric": "acc",
+      "n": 277,
+      "label_order": "as-is",
+      "fp32": 72.56317689530685,
+      "all4": 64.98194945848375,
+      "static4": 70.03610108303249,
+      "static5": 72.92418772563177,
+      "static6": 72.92418772563177,
+      "static4_adc8": 70.3971119133574,
+      "static4_wv": {
+        "mean": 69.81949458483754,
+        "std": 1.1301426601081979,
+        "min": 67.87003610108303,
+        "values": [
+          70.3971,
+          67.87,
+          70.0361,
+          70.0361,
+          70.7581
+        ]
+      },
+      "floor": 70.13317689530685,
+      "passes": {
+        "all4": false,
+        "static4": false,
+        "static5": true,
+        "static6": true,
+        "static4_adc8": true,
+        "static4_wv": false
+      }
+    },
+    "qnli": {
+      "model": "textattack/bert-base-uncased-QNLI",
+      "metric": "acc",
+      "n": 5463,
+      "label_order": "as-is",
+      "fp32": 91.54310818231741,
+      "all4": 89.14515833790956,
+      "static4": 90.40820062236867,
+      "static5": 91.17700896943072,
+      "static6": 91.17700896943072,
+      "static4_adc8": 90.20684605528098,
+      "static4_wv": {
+        "mean": 89.26597107816217,
+        "std": 0.2471508644491306,
+        "min": 88.96210873146623,
+        "values": [
+          89.5296,
+          88.9621,
+          89.0902,
+          89.493,
+          89.255
+        ]
+      },
+      "floor": 89.1131081823174,
+      "passes": {
+        "all4": true,
+        "static4": true,
+        "static5": true,
+        "static6": true,
+        "static4_adc8": true,
+        "static4_wv": false
+      }
+    },
+    "cola": {
+      "model": "textattack/bert-base-uncased-CoLA",
+      "metric": "mcc",
+      "n": 1043,
+      "label_order": "as-is",
+      "fp32": 53.387742308131116,
+      "all4": 51.829869936311276,
+      "static4": 52.96677503485717,
+      "static5": 54.44111532535151,
+      "static6": 53.904060082810524,
+      "static4_adc8": 51.62458987125488,
+      "static4_wv": {
+        "mean": 51.57049321539296,
+        "std": 0.8081945079086967,
+        "min": 50.78984340867797,
+        "values": [
+          50.7898,
+          51.4625,
+          52.0312,
+          52.7031,
+          50.8658
+        ]
+      },
+      "floor": 50.95774230813111,
+      "passes": {
+        "all4": true,
+        "static4": true,
+        "static5": true,
+        "static6": true,
+        "static4_adc8": true,
+        "static4_wv": false
+      }
+    }
+  }
+}
