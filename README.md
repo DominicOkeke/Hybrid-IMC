@@ -72,6 +72,12 @@ See `MANUAL.md`. In short: open the notebook in Google Colab and run it top to b
 
 D. N. Okeke, S. M. Musa, J. Foreman, C. M. Akujuobi, I. Nzekwe and S. Cui, "TOMAS: Operation-Aware Hybrid of In-Memory AI Accelerators for Energy-Efficient Transformer Inference," manuscript, 2026. Code and data: https://github.com/DominicOkeke/Hybrid-IMC (release v2.1). See also `CITATION.cff`.
 
+## Author
+
+**Dominic N. Okeke**  
+PhD Candidate, Electrical Engineering — Prairie View A&M University (2024–2026)  
+ORCID: [0009-0007-6335-2628](https://orcid.org/0009-0007-6335-2628) · [LinkedIn](https://www.linkedin.com/in/dominic-okeke-601b8930/) · [dnokeke@gmail.com](mailto:dnokeke@gmail.com)
+
 ## License
 
 BSD-3-Clause. See `LICENSE`.
