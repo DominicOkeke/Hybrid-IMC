@@ -3,6 +3,7 @@ message: "If you use this software or its results, please cite it as below."
 title: "TOMAS: Operation-Aware Hybrid of In-Memory AI Accelerators for Energy-Efficient Transformer Inference -- simulation code and data"
 type: software
 version: "2.1"
+doi: 10.5281/zenodo.24042251
 date-released: "2026-11-07"
 license: BSD-3-Clause
 repository-code: "https://github.com/DominicOkeke/Hybrid-IMC"
@@ -10,6 +11,7 @@ authors:
   - family-names: Okeke
     given-names: Dominic N.
     affiliation: "Prairie View A&M University"
+    orcid: "https://orcid.org/0009-0007-6335-2628"
   - family-names: Musa
     given-names: Sarhan M.
     affiliation: "Prairie View A&M University"
@@ -25,3 +27,10 @@ authors:
   - family-names: Cui
     given-names: Suxia
     affiliation: "Prairie View A&M University"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.24042251
+    description: "Release v2.1 (this version)"
+  - type: doi
+    value: 10.5281/zenodo.23899471
+    description: "All versions (resolves to the latest)"

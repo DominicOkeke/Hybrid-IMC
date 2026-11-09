@@ -70,7 +70,7 @@ See `MANUAL.md`. In short: open the notebook in Google Colab and run it top to b
 
 ## Citation
 
-D. N. Okeke, S. M. Musa, J. Foreman, C. M. Akujuobi, I. Nzekwe and S. Cui, "TOMAS: Operation-Aware Hybrid of In-Memory AI Accelerators for Energy-Efficient Transformer Inference," manuscript, 2026. Code and data: https://github.com/DominicOkeke/Hybrid-IMC (release v2.1). See also `CITATION.cff`.
+D. N. Okeke, S. M. Musa, J. Foreman, C. M. Akujuobi, I. Nzekwe and S. Cui, "TOMAS: Operation-Aware Hybrid of In-Memory AI Accelerators for Energy-Efficient Transformer Inference," manuscript, 2026. Code and data: https://github.com/DominicOkeke/Hybrid-IMC (release v2.1), archived on Zenodo: [10.5281/zenodo.24042251](https://doi.org/10.5281/zenodo.24042251) (this version); [10.5281/zenodo.23899471](https://doi.org/10.5281/zenodo.23899471) cites all versions. See also `CITATION.cff`.
 
 ## Author
 
